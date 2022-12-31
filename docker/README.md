@@ -1,3 +1,5 @@
+![TechSlate](../global/images/ts.png)
+
 # Introduction 
 This folder contains all the demos/tasks/exercises releated to docker.
 

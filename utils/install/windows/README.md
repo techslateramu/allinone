@@ -1,3 +1,5 @@
+![TechSlate](../../../global/images/ts.png)
+
 # Introduction
 
 - Here is a PowerShell script that will check if the required software is installed and install it if it is not present. 

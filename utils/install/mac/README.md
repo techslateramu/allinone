@@ -1,3 +1,5 @@
+![TechSlate](../../../global/images/ts.png)
+
 # Introduction
 
 - Here is a shell script that will check if the listed tools are installed on a MacBook. and install them if they are not present. 

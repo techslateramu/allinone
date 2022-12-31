@@ -1,3 +1,5 @@
+![TechSlate](../../../global/images/ts.png)
+
 # **Setup Grafana with Prometheus using docker-compose**
 
 # **Table of contents**

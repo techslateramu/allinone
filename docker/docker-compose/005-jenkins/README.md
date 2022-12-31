@@ -1,3 +1,5 @@
+![TechSlate](../../../global/images/ts.png)
+
 # **Creating Jenkins using Docker Compose file.**
 
 ## Table of Contents :

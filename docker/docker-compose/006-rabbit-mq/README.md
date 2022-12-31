@@ -1,3 +1,5 @@
+![TechSlate](../../../global/images/ts.png)
+
 # **Creating RabbitMQ using Docker Compose file.**
 
 ## Table of Contents :

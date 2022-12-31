@@ -1,3 +1,5 @@
+![TechSlate](../../../global/images/ts.png)
+
 # **Setup Sonarqube with Postgres database using docker-compose**
 
 # Table of contents
@@ -49,6 +51,7 @@ if you are a Linux user, Please run the following command in terminal.
 ***
 # **How to Setup SonarQube Server with Docker-compose?**
 Now, We will create a simple **docker-compose.yml** file and store the code in it.
+
 
 ### **1. Open your Visual Studio Code.**
 ![Visual studio page](images/vscodepage.png)

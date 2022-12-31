@@ -1,3 +1,5 @@
+![TechSlate](../../../global/images/ts.png)
+
 # **Creating Orange HRM using Docker Compose file.**
 
 ## Table of Contents :

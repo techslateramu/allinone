@@ -238,3 +238,12 @@ docker ps command to list the running containers, as we can see both OrangeHRM a
 ### **28.Users which are created can be seen here. **
 
 ![Orange hrm](images/usersondatabse.png)
+
+
+## Known ERRORs and Solutions **
+
+- sudo mysql -u root -p
+
+- mysql> SELECT @@global.sql_mode;
+
+- mysql> SET GLOBAL sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));

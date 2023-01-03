@@ -1,3 +1,5 @@
+![TechSlate](../../global/images/ts.png)
+
 # Introduction
 
 Here are 40 common Linux commands, in alphabetical order:

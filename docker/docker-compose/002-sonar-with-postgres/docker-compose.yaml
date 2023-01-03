@@ -1,6 +1,7 @@
 version: '3.7'
 services:
   sonarqube:
+    # platform: linux/x86_64
     image: sonarqube:latest
     ports:
       - 9000:9000
@@ -15,6 +16,7 @@ services:
       - sonarqube_bundled-plugins:/opt/sonarqube/lib/bundled-plugins
 
   db:
+    # platform: linux/x86_64
     image: postgres:latest
     environment:
       - POSTGRES_USER=sonar

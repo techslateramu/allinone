@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Weather Report</h1>
+
+<div id="weather"></div>
+
+<script>
+fetch('http://127.0.0.1:5000/weather')
+  .then(response => response.json())
+  .then(data => {
+    document.getElementById('weather').innerHTML = data.report;
+  });
+</script>
+
+</body>
+</html>

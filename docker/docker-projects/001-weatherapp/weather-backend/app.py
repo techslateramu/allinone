@@ -16,14 +16,9 @@ data = response.json()
 @app.route('/weather')
 def get_weather():
     # Get weather data from API
-    # weather_data = {'temperature': data['main']['temp'], 'humidity': data['main']['humidity']}
-    # return jsonify(weather_data)
-    return str(response)
-
+    weather_data = {'temperature': data['main']['temp'], 'humidity': data['main']['humidity']}
+    return jsonify(weather_data)
 
 if __name__ == '__main__':
     app.run()
-
-
-from flask import jsonify
 

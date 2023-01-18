@@ -72,3 +72,21 @@ If you want to run an infinite loop inside the container, you can use the while 
 docker run --name my-alpine -it alpine:latest /bin/sh -c "while true; do echo 'Hello, world!'; sleep 1; done"
 ```
 
+## Docker Run with Options Exmple
+
+```
+docker run --name mycontainer -d -p 8080:80 -v /host/data:/container/data -e ENV_VAR=value --restart=always --log-opt max-size=10m --network=mynetwork --link mydb:db -w /container/workdir image_name command_to_run
+```
+
+- --name: assigns a name to the container
+- -d: runs the container in detached mode (in the background)
+- -p: maps the host's port 8080 to the container's port 80
+- -v: mounts the host's /host/data directory to the container's /container/data directory
+- -e: sets the value of an environment variable ENV_VAR inside the container
+- --restart: defines the container's restart policy (in this case, always)
+- --log-opt: sets the maximum size of the log file to 10 MB
+- --network: specifies the network to connect the container to (must be pre-created)
+- --link: links the container to another container (in this case, "mydb") and creates an alias "db" for it
+- -w: sets the working directory inside the container
+- image_name: the name of the image to use for the container
+- command_to_run: command to run when the container starts up

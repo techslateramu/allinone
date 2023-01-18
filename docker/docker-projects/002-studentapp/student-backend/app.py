@@ -27,6 +27,11 @@ def submit():
   return jsonify({'result': 'success'})
 
 # Route for retrieving student data from database
+@app.route('/', methods=['GET'])
+def hello():
+  return "app works"
+
+# Route for retrieving student data from database
 @app.route('/save-student-data', methods=['GET'])
 def get_students():
   # Get student data from database
@@ -38,4 +43,5 @@ def get_students():
   # Return student data as JSON
   return jsonify(students)
 
-app.run()
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000, debug=True)

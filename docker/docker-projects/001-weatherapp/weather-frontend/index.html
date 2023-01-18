@@ -10,8 +10,10 @@
 fetch('http://127.0.0.1:5000/weather')
   .then(response => response.json())
   .then(data => {
-    document.getElementById('weather').innerHTML = data.report;
+    document.getElementById('weather').innerHTML = JSON.stringify(data);
   });
+
+
 </script>
 
 </body>

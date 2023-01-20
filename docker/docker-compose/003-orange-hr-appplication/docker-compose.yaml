@@ -3,7 +3,7 @@ services:
   orangehrm:
     image: orangehrm/orangehrm
     ports:
-      - 7000:80
+      - 7005:80
     environment:
       MYSQL_DATABASE: orangehrm
       MYSQL_USER: orangehrm
@@ -11,6 +11,7 @@ services:
       MYSQL_ROOT_PASSWORD: password
     depends_on:
       - db
+    # platform: linux/x86_64   # this line is only required if you are using mac-m1 chip
   db:
     image: mysql:5.7
     ports:
@@ -22,6 +23,7 @@ services:
       MYSQL_ROOT_PASSWORD: password
     volumes:
       - orangehrm-db:/var/lib/mysql
+    # platform: linux/x86_64 # this line is only required if you are using mac-m1 chip
 
 volumes:
   orangehrm-db:

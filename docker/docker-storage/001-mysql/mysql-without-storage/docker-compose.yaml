@@ -1,0 +1,17 @@
+version: '3'
+services:
+  mysql:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: mydb
+    ports:
+      - "3306:3306"
+
+
+# This is a basic docker-compose.yml file that runs the latest MySQL image, sets the root password to "password" and creates a database called "mydb". 
+# It also exposes the MySQL port 3306 to the host machine.
+# Note: This compose file does not mount any volumes.
+
+
+

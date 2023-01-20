@@ -1,0 +1,15 @@
+version: '3'
+services:
+  mongo:
+    image: mongo:latest
+    container_name: mongo-server
+    ports:
+      - "27017:27017"
+
+# This docker-compose.yml file will create a container named "mongo-server" using the latest MongoDB image. 
+# The container will expose port 27017 to the host, so that you can connect to the MongoDB server from the host using the standard MongoDB client or other MongoDB tools.
+# Since you didn't mention anything about storage, this compose file will not have any volume mounting.
+# Please note that This container will use the default MongoDB data directory within the container, which will be deleted when the container is removed. If you want to keep the data after the container is deleted, you will need to mount a volume to the container's /data/db directory.
+
+
+

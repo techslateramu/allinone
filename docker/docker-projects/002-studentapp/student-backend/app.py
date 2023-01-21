@@ -32,7 +32,7 @@ def hello():
   return "app works"
 
 # Route for retrieving student data from database
-@app.route('/save-student-data', methods=['GET'])
+@app.route('/get-student-data', methods=['GET'])
 def get_students():
   # Get student data from database
   cursor = db.students.find()
@@ -44,4 +44,4 @@ def get_students():
   return jsonify(students)
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000, debug=True)
+    app.run(host="0.0.0.0", port=5001, debug=True)

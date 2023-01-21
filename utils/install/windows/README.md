@@ -14,14 +14,15 @@
 # What happens
 
 If the script is success, you will see the below list installed
-- HomeBrew 
+- Chocolatey -- Package & Installation Manager for Windows OS
 - Git
 - Terraform
 - VS Code
 - Azure CLI
 - DBeaver
+- Maven
+- Helm
+- Postman
 - Studio 3T
-- Docker
-- K8S
 - Kubectl
 

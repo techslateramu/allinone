@@ -76,75 +76,70 @@ if (-not $dbeaverInstalled) {
     Write-Output " ***************************** DBeaver is already installed. ***************************** "
 }
 
-# Check if virtualization is enabled
-$virtualizationEnabled = Get-WmiObject -Class Win32_ComputerSystem | Select-Object -ExpandProperty HypervisorPresent
 
-# If virtualization is not enabled, try to enable it
-if (-not $virtualizationEnabled) {
-    Write-Output " ***************************** Virtualization is not enabled. Attempting to enable it... ***************************** "
 
-    # Enable virtualization in BIOS/UEFI
-    bcdedit /set hypervisorlaunchtype auto
-    Write-Output " ***************************** Virtualization enabled in BIOS/UEFI. ***************************** "
+#Check if Maven is installed
+$mavenInstalled = Get-Command mvn -ErrorAction SilentlyContinue
 
-    # Enable virtualization in Windows features
-    Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All
-    Write-Output " ***************************** Virtualization enabled in Windows features. ***************************** "
+#If Maven is not installed, install it
+if (-not $mavenInstalled) {
+
+Write-Output " ***************************** Installing Maven... ***************************** "
+# Install Maven using Chocolatey
+choco install maven
+Write-Output " ***************************** Maven installed. ***************************** "
 } else {
-    Write-Output " ***************************** Virtualization is already enabled. ***************************** "
+Write-Output " ***************************** Maven is already installed. ***************************** "
 }
 
-# Check if WSL2 is installed
-$wsl2Installed = Get-WindowsOptionalFeature -FeatureName Microsoft-Windows-Subsystem-Linux
+#Check if Postman is installed
+$postmanInstalled = Get-Command postman -ErrorAction SilentlyContinue
 
-# If WSL2 is not installed, install it
-if (-not $wsl2Installed.State -eq 'Enabled') {
-    Write-Output " ***************************** WSL2 is not installed. Installing it... ***************************** "
-    # Install WSL2 using the Windows Features dialog
-    Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform -NoRestart
-    Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux -NoRestart
-    # Restart the system to complete the installation
-    Restart-Computer
-    Write-Output " ***************************** WSL2 installed. ***************************** "
+#If Postman is not installed, install it
+if (-not $postmanInstalled) {
+Write-Output " ***************************** Installing Postman... ***************************** "
+# Install Postman using Chocolatey
+choco install postman
+Write-Output " ***************************** Postman installed. ***************************** "
 } else {
-    Write-Output " ***************************** WSL2 is already installed. ***************************** "
+Write-Output " ***************************** Postman is already installed. ***************************** "
 }
 
-# Check if Docker is installed
-$dockerInstalled = Get-Command docker -ErrorAction SilentlyContinue
+#Check if Helm is installed
+$helmInstalled = Get-Command helm -ErrorAction SilentlyContinue
 
-# If Docker is not installed, install it
-if (-not $dockerInstalled) {
-    Write-Output " ***************************** Docker is not installed. Installing it... ***************************** "
-    # Install Docker using Chocolatey
-    choco install docker
-    # Add the current user to the Docker group
-    net localgroup "Docker Users" "$env:USERNAME" /add
-    # Restart the Docker service
-    Restart-Service docker
-    Write-Output " ***************************** Docker installed. ***************************** "
+#If Helm is not installed, install it
+if (-not $helmInstalled) {
+Write-Output " ***************************** Installing Helm... ***************************** "
+# Install Helm using Chocolatey
+choco install kubernetes-helm
+Write-Output " ***************************** Helm installed. ***************************** "
 } else {
-    Write-Output " ***************************** Docker is already installed. ***************************** "
+Write-Output " ***************************** Helm is already installed. ***************************** "
 }
 
-# Run Docker and test it
-Write-Output " ***************************** Running Docker and testing it... ***************************** "
-docker run hello-world
-Write-Output " ***************************** Docker is running and tested successfully. ***************************** "
+# Check if Studio 3T is installed
+$studio3tInstalled = Get-Command studio3t -ErrorAction SilentlyContinue
 
-# Check if Kubernetes is enabled in Docker
-$kubernetesEnabled = Get-Service kubelet | Select-Object -ExpandProperty Status
+# If Studio 3T is not installed, install it
+if (-not $studio3tInstalled) {
+Write-Output " ***************************** Installing Studio 3T... ***************************** "
+# Install Studio 3T using Chocolatey
+choco install studio3t
+Write-Output " ***************************** Studio 3T installed. ***************************** "
+} else {
+Write-Output " ***************************** Studio 3T is already installed. ***************************** "
+}
 
-# If Kubernetes is not enabled, enable it and test it
-if ($kubernetesEnabled -ne 'Running') {
-    Write-Output " ***************************** Enabling Kubernetes in Docker... ***************************** "
-    # Enable Kubernetes in Docker
-    Enable-WindowsOptionalFeature -Online -FeatureName Containers -All
-    # Restart the Docker service
-    Restart-Service docker
-    Write-Output " ***************************** Kubernetes enabled in Docker. ***************************** "
+# Check if kubectl is installed
+$kubectlInstalled = Get-Command kubectl -ErrorAction SilentlyContinue
 
-    # Test Kubernetes in Docker
-    Write-Output " ***************************** Testing Kubernetes in Docker... ***************************** "
-    kubectl run hello-node --image
+# If kubectl is not installed, install it
+if (-not $kubectlInstalled) {
+Write-Output " ***************************** Installing kubectl... ***************************** "
+# Install kubectl using Chocolatey
+choco install kubernetes-cli
+Write-Output " ***************************** kubectl installed. ***************************** "
+} else {
+Write-Output " ***************************** kubectl is already installed. ***************************** "
 }

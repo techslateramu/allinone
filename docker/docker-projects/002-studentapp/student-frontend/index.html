@@ -12,7 +12,7 @@
 <br>
 <br>
   <div class="container">
-    <h1> <center> Sample Student Application </center> </h1>
+    <h1> Sample Student Application </h1>
     <form id="student-form">
       <div class="form-group">
         <label for="name">Name:</label>
@@ -42,7 +42,7 @@
       const city = formData.get('city');
       const age = formData.get('age');
 
-      fetch('http://127.0.0.1:5000/save-student-data', {
+      fetch('http://localhost:5001/save-student-data', {
         method: 'POST',
         headers: {
         'Content-Type': 'application/json'

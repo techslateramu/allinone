@@ -1,7 +1,7 @@
 # Uninstall Git
 if((Get-Command git -ErrorAction SilentlyContinue) -ne $null) {
     Write-Output "Git is installed. Uninstalling..."
-    choco uninstall git
+    choco uninstall git -y
     Write-Output "Git has been uninstalled"
 }
 else{
@@ -11,7 +11,7 @@ else{
 # Uninstall Terraform
 if((Get-Command terraform -ErrorAction SilentlyContinue) -ne $null) {
     Write-Output "Terraform is installed. Uninstalling..."
-    choco uninstall terraform
+    choco uninstall terraform -y
     Write-Output "Terraform has been uninstalled"
 }
 else{
@@ -21,7 +21,7 @@ else{
 # Uninstall VS Code
 if((Get-Command code -ErrorAction SilentlyContinue) -ne $null) {
     Write-Output "VS Code is installed. Uninstalling..."
-    choco uninstall vscode
+    choco uninstall vscode -y
     Write-Output "VS Code has been uninstalled"
 }
 else{
@@ -31,7 +31,7 @@ else{
 # Uninstall Azure CLI
 if((Get-Command az -ErrorAction SilentlyContinue) -ne $null) {
     Write-Output "Azure CLI is installed. Uninstalling..."
-    choco uninstall azure-cli
+    choco uninstall azure-cli -y
     Write-Output "Azure CLI has been uninstalled"
 }
 else{
@@ -41,7 +41,7 @@ else{
 #Uninstall DBeaver
 if((Get-Command DBeaver -ErrorAction SilentlyContinue) -ne $null) {
     Write-Output "DBeaver is installed. Uninstalling..."
-    choco uninstall DBeaver
+    choco uninstall DBeaver -y
     Write-Output "DBeaver has been uninstalled"
 }
 else{
@@ -51,7 +51,7 @@ else{
 # Uninstall Maven
 if((Get-Command mvn -ErrorAction SilentlyContinue) -ne $null) {
     Write-Output "Maven is installed. Uninstalling..."
-    choco uninstall maven
+    choco uninstall maven -y
     Write-Output "Maven has been uninstalled"
 }
 else{
@@ -61,7 +61,7 @@ else{
 # Uninstall Helm
 if((Get-Command helm -ErrorAction SilentlyContinue) -ne $null) {
     Write-Output "Helm is installed. Uninstalling..."
-    choco uninstall kubernetes-helm
+    choco uninstall kubernetes-helm -y
     Write-Output "Helm has been uninstalled"
 }
 else{
@@ -71,7 +71,7 @@ else{
 # Uninstall Postman
 if((Get-Command postman -ErrorAction SilentlyContinue) -ne $null) {
     Write-Output "Postman is installed. Uninstalling..."
-    choco uninstall postman
+    choco uninstall postman -y
     Write-Output "Postman has been uninstalled"
 }
 else{
@@ -81,7 +81,7 @@ else{
 # Uninstall Studio 3T
 if((Get-Command Studio3T -ErrorAction SilentlyContinue) -ne $null) {
     Write-Output "Studio 3T is installed. Uninstalling..."
-    choco uninstall Studio3T
+    choco uninstall Studio3T -y
     Write-Output "Studio 3T has been uninstalled"
 }
 else{
@@ -91,7 +91,7 @@ else{
 # Uninstall Kubectl
 if((Get-Command kubectl -ErrorAction SilentlyContinue) -ne $null) {
     Write-Output "Kubectl is installed. Uninstalling..."
-    choco uninstall kubectl
+    choco uninstall kubectl -y
     Write-Output "Kubectl has been uninstalled"
 }
 else{
@@ -101,7 +101,7 @@ else{
 # Uninstall Azure Data Studio
 if((Get-Command "Azure Data Studio" -ErrorAction SilentlyContinue) -ne $null) {
     Write-Output "Azure Data Studio is installed. Uninstalling..."
-    choco uninstall "Azure Data Studio"
+    choco uninstall "Azure Data Studio" -y
     Write-Output "Azure Data Studio has been uninstalled"
 }
 else{

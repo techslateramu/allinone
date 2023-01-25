@@ -37,9 +37,13 @@ This is the help page to install docker in windows machine
 
 - **Add WSL path to env variable i.e. PATH**
 
-1. **Go to the file location of **wsl_update_x64** and copy the path of it .**
+1. **Open WSL file location**
 
 ![WSL check](images/location.png)
+
+***
+![WSL check](images/path.png)
+
 
 2. **Add the path to System Environment variables .**
 

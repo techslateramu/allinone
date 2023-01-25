@@ -11,7 +11,7 @@ This is the help page to install docker in windows machine
 
 ### 1. **Lets first check if we have WSL installed in our system , by typing the below command in Powershell (Run as Administrator)** ###
 
-      **```wsl --list --verbose```**
+**```wsl --list --verbose```**
 
 ![WSL check](images/powershell.png)
 

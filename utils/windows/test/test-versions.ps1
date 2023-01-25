@@ -1,4 +1,4 @@
-$softwareList = @("Git", "Terraform", "Code", "AZ",  "Maven", "Helm", "Kubectl")
+$softwareList = @("Git", "Terraform", "Code", "AZ",  "Mvn", "Helm", "Kubectl")
 
 foreach ($software in $softwareList) {
     $installed = Get-Command -Name $software -ErrorAction SilentlyContinue

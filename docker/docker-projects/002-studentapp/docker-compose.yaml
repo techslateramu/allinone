@@ -1,20 +1,19 @@
 version: '3'
 services:
-  orangehrm:
-    image: orangehrm/orangehrm
+  studentfrontend:
+    image: student-frontend
     ports:
       - 7000:80
-    environment:
-      MYSQL_DATABASE: orangehrm
-      MYSQL_USER: orangehrm
-      MYSQL_PASSWORD: password
-      MYSQL_ROOT_PASSWORD: password
+  studentbackend:
+    image: student-backend
+    ports:
+      - 5000:5000
     depends_on:
       - db
   db:
-    image: mysql:5.7
+    image: mongo
     ports:
-      - 7001:3306
+      - 27017:27017
     environment:
       MYSQL_DATABASE: orangehrm
       MYSQL_USER: orangehrm

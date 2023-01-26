@@ -1,4 +1,4 @@
-version: '3'
+version: "3"
 services:
   studentfrontend:
     image: student-frontend
@@ -15,12 +15,10 @@ services:
     ports:
       - 27017:27017
     environment:
-      MYSQL_DATABASE: orangehrm
-      MYSQL_USER: orangehrm
-      MYSQL_PASSWORD: password
-      MYSQL_ROOT_PASSWORD: password
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: mongopassword
     volumes:
-      - orangehrm-db:/var/lib/mysql
+      - mongo_db_data:/data/db
 
 volumes:
-  orangehrm-db:
+  mongo_db_data:

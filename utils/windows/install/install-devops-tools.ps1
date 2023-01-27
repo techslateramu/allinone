@@ -1,3 +1,6 @@
+# Grant policies to execute for the current user
+Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser
+
 # Check if Chocolatey is installed
 $chocolateyInstalled = Get-Command choco -ErrorAction SilentlyContinue
 

@@ -1,67 +1,72 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  <style>
-    .form-group {
-      margin: 30px 0;
-    }
-  </style>
-</head>
-<body>
-<br>
-<br>
-  <div class="container">
-    <h1> Sample Student Application </h1>
-    <form id="student-form">
-      <div class="form-group">
-        <label for="name">Name:</label>
-        <input type="text" class="form-control" id="name" name="name">
-      </div>
-      <div class="form-group">
-        <label for="city">City:</label>
-        <input type="text" class="form-control" id="city" name="city">
-      </div>
-      <div class="form-group">
-        <label for="age">Age:</label>
-        <input type="number" class="form-control" id="age" name="age">
-      </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
-    <div id="student-data"></div>
-  </div>
-  <script>
-    const form = document.querySelector('#student-form');
-    const studentDataDiv = document.querySelector('#student-data');
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <style>
+      .form-group {
+        margin: 30px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <br />
+    <br />
+    <div class="container">
+      <h1>Sample Student Application</h1>
+      <form id="student-form">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" class="form-control" id="name" name="name" />
+        </div>
+        <div class="form-group">
+          <label for="city">City:</label>
+          <input type="text" class="form-control" id="city" name="city" />
+        </div>
+        <div class="form-group">
+          <label for="age">Age:</label>
+          <input type="number" class="form-control" id="age" name="age" />
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      <div id="student-data"></div>
+    </div>
+    <script>
+      const form = document.querySelector("#student-form");
+      const studentDataDiv = document.querySelector("#student-data");
 
-    form.addEventListener('submit', (event) => {
-      event.preventDefault();
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
 
-      const formData = new FormData(form);
-      const name = formData.get('name');
-      const city = formData.get('city');
-      const age = formData.get('age');
+        const formData = new FormData(form);
+        const name = formData.get("name");
+        const city = formData.get("city");
+        const age = formData.get("age");
 
-      fetch('http://localhost:5001/save-student-data', {
-        method: 'POST',
-        headers: {
-        'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          name,
-          city,
-          age,
-        }),
-      })
-        .then((response) => response.json())
-        .then((data) => {
-          studentDataDiv.innerHTML = `
+        fetch("http://localhost:5001/save-student-data", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            name,
+            city,
+            age,
+          }),
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            studentDataDiv.innerHTML = `
             <p>Name: ${data.name}</p>
             <p>City: ${data.city}</p>
             <p>Age: ${data.age}</p>
           `;
-        });
-    });
-  </script>
-</body>
+          });
+      });
+    </script>
+  </body>
 </html>

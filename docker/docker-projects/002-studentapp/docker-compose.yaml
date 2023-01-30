@@ -7,7 +7,7 @@ services:
   studentbackend:
     image: student-backend
     ports:
-      - 5000:5000
+      - 5001:5001
     depends_on:
       - db
   db:
@@ -18,7 +18,7 @@ services:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: mongopassword
     volumes:
-      - mongo_db_data:/data/db
+      - mongo_db_data:/Users/mohantella/Documents/data/db
 
 volumes:
   mongo_db_data:

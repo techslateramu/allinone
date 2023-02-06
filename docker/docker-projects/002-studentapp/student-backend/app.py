@@ -8,7 +8,7 @@ CORS(app)
 app.config["DEBUG"] = True
 
 # MongoDB connection config
-client = pymongo.MongoClient("mongodb://localhost:27017/stu")
+client = pymongo.MongoClient("mongodb://studentdatabase/stu")
 db = client['stu']
 
 # Route for handling form submission
@@ -44,4 +44,4 @@ def get_students():
   return jsonify(students)
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5001, debug=True)
+    app.run(host="0.0.0.0", port=9300, debug=True)

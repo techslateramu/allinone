@@ -1,26 +1,18 @@
 version: '3'
 services:
   studentfrontend:
-    image: student-frontend
+    image: student-frontend:1.0
     ports:
-      - 7000:80
+      - 9200:80
   studentbackend:
-    image: student-backend
+    hostname: studentbackend
+    image: student-backend:1.0
     ports:
-      - 5000:5000
+      - 9300:9300
     depends_on:
       - db
   db:
+    hostname: studentdatabase
     image: mongo
     ports:
       - 27017:27017
-    environment:
-      MYSQL_DATABASE: orangehrm
-      MYSQL_USER: orangehrm
-      MYSQL_PASSWORD: password
-      MYSQL_ROOT_PASSWORD: password
-    volumes:
-      - orangehrm-db:/var/lib/mysql
-
-volumes:
-  orangehrm-db:

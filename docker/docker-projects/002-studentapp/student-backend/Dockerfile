@@ -10,8 +10,8 @@ COPY app.py /app/app.py
 # Set the working directory to the app directory
 WORKDIR /app
 
-EXPOSE 5001
-EXPOSE 27017
+# EXPOSE 9300
+# EXPOSE 27017
 
 
 # Run the app when the container is started

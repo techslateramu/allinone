@@ -1,0 +1,247 @@
+[
+    {
+      "name": "ApiExceptionHandling__ReturnActualErrorMessage",
+      "value": "true",
+      "slotSetting": false
+    },
+    {
+      "name": "APPINSIGHTS_INSTRUMENTATIONKEY",
+      "value": "ed5e1c00-e6f1-48d5-b2fc-10422f24d014",
+      "slotSetting": false
+    },
+    {
+      "name": "ApplicationInsights__ConnectionString",
+      "value": "@Microsoft.KeyVault(SecretUri=https://kvrhsdevdsmobileapis.vault.azure.net/secrets/MobileApisApplicationInsightsConnectionString/3c39914ae76d4090a0d7c5ebc53fc6de)",
+      "slotSetting": false
+    },
+    {
+      "name": "ApplicationInsights__InstrumentationKey",
+      "value": "@Microsoft.KeyVault(SecretUri=https://kvrhsdevdsmobileapis.vault.azure.net/secrets/MobileApisApplicationInsightsInstrumentKey/e3b6649500ab4c668d817ec17814484c)",
+      "slotSetting": false
+    },
+    {
+      "name": "APPLICATIONINSIGHTS_CONNECTION_STRING",
+      "value": "InstrumentationKey=ed5e1c00-e6f1-48d5-b2fc-10422f24d014;IngestionEndpoint=https://uksouth-1.in.applicationinsights.azure.com/;LiveEndpoint=https://uksouth.livediagnostics.monitor.azure.com/",
+      "slotSetting": false
+    },
+    {
+      "name": "ApplicationInsightsAgent_EXTENSION_VERSION",
+      "value": "~3",
+      "slotSetting": false
+    },
+    {
+      "name": "ASPNETCORE_ENVIRONMENT",
+      "value": "Development",
+      "slotSetting": false
+    },
+    {
+      "name": "AzureAdB2C__Audience",
+      "value": "1342a209-a669-4182-9b3b-006364516f98",
+      "slotSetting": false
+    },
+    {
+      "name": "AzureAdB2C__CallbackPath",
+      "value": "/signin-oidc",
+      "slotSetting": false
+    },
+    {
+      "name": "AzureAdB2C__ClientId",
+      "value": "1342a209-a669-4182-9b3b-006364516f98",
+      "slotSetting": false
+    },
+    {
+      "name": "AzureAdB2C__Domain",
+      "value": "rhsb2cqa.onmicrosoft.com",
+      "slotSetting": false
+    },
+    {
+      "name": "AzureAdB2C__Instance",
+      "value": "https://rhsb2cqa.b2clogin.com",
+      "slotSetting": false
+    },
+    {
+      "name": "AzureAdB2C__Issuer",
+      "value": "rhsb2cqa.onmicrosoft.com",
+      "slotSetting": false
+    },
+    {
+      "name": "AzureAdB2C__SignedOutCallbackPath",
+      "value": "/signout/B2C_1_susi_reset_v2",
+      "slotSetting": false
+    },
+    {
+      "name": "AzureAdB2C__SignUpSignInPolicyId",
+      "value": "B2C_1_SignInUp",
+      "slotSetting": false
+    },
+    {
+      "name": "AzureAdB2C__TenantId",
+      "value": "d9758904-be1e-4e2d-ba15-c94bec2c6748",
+      "slotSetting": false
+    },
+    {
+      "name": "BackEndAuthentication__JwtSecurityToken__Audience",
+      "value": "@Microsoft.KeyVault(SecretUri=https://kvd-ds-non-prod.vault.azure.net/secrets/JwtSecurityTokenAudience/a356cb9c12cc4900b71fb917b73d23ba)",
+      "slotSetting": false
+    },
+    {
+      "name": "BackEndAuthentication__JwtSecurityToken__Issuer",
+      "value": "@Microsoft.KeyVault(SecretUri=https://kvd-ds-non-prod.vault.azure.net/secrets/JwtSecurityTokenIssuer/49d768fba9e24bde8ef7cf997f6ba666)",
+      "slotSetting": false
+    },
+    {
+      "name": "BackEndAuthentication__JwtSecurityToken__Key",
+      "value": "@Microsoft.KeyVault(SecretUri=https://kvd-ds-non-prod.vault.azure.net/secrets/JwtSecurityTokenKey/2e251763e17d40f9b72fe69a95c5b516)",
+      "slotSetting": false
+    },
+    {
+      "name": "BackEndAuthentication__JwtSecurityToken__TimeToLiveSeconds",
+      "value": "90",
+      "slotSetting": false
+    },
+    {
+      "name": "CareTasksBackEndSettings__ApimKey",
+      "value": "@Microsoft.KeyVault(SecretUri=https://kvrhsdevdsmobileapis.vault.azure.net/secrets/CareTasksApiApimKey/749029dd62aa492ab71a99557b6be4cb)",
+      "slotSetting": false
+    },
+    {
+      "name": "CareTasksBackEndSettings__ApimTrace",
+      "value": "true",
+      "slotSetting": false
+    },
+    {
+      "name": "CareTasksBackEndSettings__ApimUrl",
+      "value": "@Microsoft.KeyVault(SecretUri=https://kvrhsdevdsmobileapis.vault.azure.net/secrets/CareTasksApiApimUrl/5126674ea46b407cae24403924ff2e57)",
+      "slotSetting": false
+    },
+    {
+      "name": "CareTasksBackEndSettings__ApiUrl",
+      "value": "@Microsoft.KeyVault(SecretUri=https://kvrhsdevdsmobileapis.vault.azure.net/secrets/CareTasksApiUrl/871af946f0f440fbb72dd71b9c3b1383)",
+      "slotSetting": false
+    },
+    {
+      "name": "CareTasksBackEndSettings__IsLogResponse",
+      "value": "false",
+      "slotSetting": false
+    },
+    {
+      "name": "CareTasksBackEndSettings__IsUseApim",
+      "value": "true",
+      "slotSetting": false
+    },
+    {
+      "name": "FileSettings__AllowedFileExtensions",
+      "value": ".jpg,.jpeg,.png",
+      "slotSetting": false
+    },
+    {
+      "name": "FileSettings__MaxFileSize",
+      "value": "12582912",
+      "slotSetting": false
+    },
+    {
+      "name": "FileSettings__MinFileSize",
+      "value": "1",
+      "slotSetting": false
+    },
+    {
+      "name": "IdentifyPlantConfigSettings__PlantIdDisplayScoreFormat",
+      "value": "F",
+      "slotSetting": false
+    },
+    {
+      "name": "PlantIDBackEndSettings__ApimKey",
+      "value": "@Microsoft.KeyVault(SecretUri=https://kvrhsdevdsmobileapis.vault.azure.net/secrets/PlantIdApiApimKey/6c204b301c8f4d8da756ebfd8dd0c131)",
+      "slotSetting": false
+    },
+    {
+      "name": "PlantIDBackEndSettings__ApimTrace",
+      "value": "true",
+      "slotSetting": false
+    },
+    {
+      "name": "PlantIDBackEndSettings__ApimUrl",
+      "value": "@Microsoft.KeyVault(SecretUri=https://kvrhsdevdsmobileapis.vault.azure.net/secrets/PlantIdApiApimUrl/b5c477d0a8f4429395a98c0a768fc364)",
+      "slotSetting": false
+    },
+    {
+      "name": "PlantIDBackEndSettings__ApiUrl",
+      "value": "@Microsoft.KeyVault(SecretUri=https://kvrhsdevdsmobileapis.vault.azure.net/secrets/PlantIdApiUrl/61fb4b031393455d9929d6a381e859a7)",
+      "slotSetting": false
+    },
+    {
+      "name": "PlantIDBackEndSettings__IsLogResponse",
+      "value": "false",
+      "slotSetting": false
+    },
+    {
+      "name": "PlantIDBackEndSettings__IsUseApim",
+      "value": "true",
+      "slotSetting": false
+    },
+    {
+      "name": "PlantsApiBackendSettings__ApiUrl",
+      "value": "https://plants-qa.rhs.org.uk/api",
+      "slotSetting": false
+    },
+    {
+      "name": "PlantsApiBackendSettings__IsUseApim",
+      "value": "false",
+      "slotSetting": false
+    },
+    {
+      "name": "ServiceSettings__PlantsApiUrl",
+      "value": "https://plants-qa2.rhs.org.uk/api",
+      "slotSetting": false
+    },
+    {
+      "name": "SwaggerUIAzureAdB2C__ApiScope",
+      "value": "https://rhsb2cqa.onmicrosoft.com/mobile.api/all",
+      "slotSetting": false
+    },
+    {
+      "name": "SwaggerUIAzureAdB2C__AuthorizationUrl",
+      "value": "https://rhsb2cqa.b2clogin.com/rhsb2cqa.onmicrosoft.com/oauth2/v2.0/authorize?p=B2C_1_SignInUp&nonce=defaultNonce&scope=openid&prompt=login",
+      "slotSetting": false
+    },
+    {
+      "name": "SwaggerUIAzureAdB2C__OpenIdClientId",
+      "value": "1649ea58-394e-4bc6-83db-0b063b97d99d",
+      "slotSetting": false
+    },
+    {
+      "name": "SwaggerUIAzureAdB2C__TokenUrl",
+      "value": "https://rhsb2cqa.b2clogin.com/rhsb2cqa.onmicrosoft.com/oauth2/v2.0/token",
+      "slotSetting": false
+    },
+    {
+      "name": "TimeToLiveSeconds__JwtSecurityToken__Key",
+      "value": "90",
+      "slotSetting": false
+    },
+    {
+      "name": "WaitAndRetrySettings__PowMultiply",
+      "value": "5",
+      "slotSetting": false
+    },
+    {
+      "name": "WaitAndRetrySettings__RetryCount",
+      "value": "3",
+      "slotSetting": false
+    },
+    {
+      "name": "WaitAndRetrySettings__Timeout",
+      "value": "600",
+      "slotSetting": false
+    },
+    {
+      "name": "WaitAndRetrySettings__Wait",
+      "value": "10",
+      "slotSetting": false
+    },
+    {
+      "name": "XDT_MicrosoftApplicationInsights_Mode",
+      "value": "Recommended",
+      "slotSetting": false
+    }
+  ]

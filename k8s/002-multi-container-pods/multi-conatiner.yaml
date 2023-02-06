@@ -1,19 +1,22 @@
-apiVersion: v1
-kind: Pod
+apiVersion: apps/v1
+kind: Deployment
 metadata:
-  name: multi-container-pod
+  name: multi-container-deployment
 spec:
-  containers:
-  - name: container-1
-    image: nginx
-    ports:
-    - containerPort: 80
-  - name: container-2
-    image: redis
-    ports:
-    - containerPort: 6379
-  # - name: container-3
-  #   image: mongo
-  #   ports:
-  #   - containerPort: 27017
-
+  replicas: 3
+  selector:
+    matchLabels:
+      app: multi-container
+  template:
+    metadata:
+      labels:
+        app: multi-container
+    spec:
+      containers:
+      - name: web-container
+        image: nginx:latest
+        ports:
+        - containerPort: 80
+      - name: worker-container
+        image: busybox:latest
+        command: ["/bin/sh", "-c", "echo The worker container is running && sleep 3600"]

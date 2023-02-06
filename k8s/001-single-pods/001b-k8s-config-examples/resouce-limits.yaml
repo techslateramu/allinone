@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment
+  labels:
+    app: web
+spec:
+  selector:
+    matchLabels:
+      app: web
+  replicas: 5
+  strategy:
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: web
+    spec:
+      containers:
+      - name: nginx
+        image: nginx
+        resources:
+          limits:
+            memory: 200Mi
+          requests:
+            cpu: 100m
+            memory: 200Mi
+        ports:
+        - containerPort: 80
+
+
+
+
+# This is a Kubernetes deployment manifest written in YAML, defining a deployment named "nginx-deployment" 
+# that runs 5 replicas of an nginx container. The deployment uses a RollingUpdate strategy and listens on port 80. 
+# The selector specifies that the deployment should manage pods with the label "app: web", 
+# and the template defines the metadata and spec of the pods to create.
+
+# In addition to the previous information, the configuration has specified resource limits and requests for the container. 
+# The container is requesting 100m of CPU and 200Mi of memory, and setting a limit of 200Mi of memory.

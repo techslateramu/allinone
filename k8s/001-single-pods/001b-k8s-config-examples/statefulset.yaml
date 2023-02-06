@@ -1,0 +1,72 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx
+  labels:
+    app: nginx
+spec:
+  ports:
+    - port: 80
+      name: web
+  clusterIP: None
+  selector:
+    app: nginx
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: web
+spec:
+  selector:
+    matchLabels:
+      app: nginx
+  serviceName: nginx
+  replicas: 3
+  minReadySeconds: 10
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      terminationGracePeriodSeconds: 10
+      containers:
+        - name: nginx
+          image: k8s.gcr.io/nginx-slim:0.8
+          ports:
+            - containerPort: 80
+              name: web
+          volumeMounts:
+            - name: www
+              mountPath: /usr/share/nginx/html
+  volumeClaimTemplates:
+    - metadata:
+        name: www
+      spec:
+        accessModes:
+          - ReadWriteOnce
+        storageClassName: my-storage-class
+        resources:
+          requests:
+            storage: 1Gi
+
+
+
+
+# The YAML describes a Kubernetes deployment consisting of two resources: a service and a stateful set.
+
+# The Service resource, named "nginx", exposes port 80 and is labeled with "app: nginx". 
+# The service has a cluster IP of "None", which means it will not have a cluster IP assigned to it and won't be accessible 
+# from within the cluster. The selector for this service matches the label "app: nginx".
+
+# The StatefulSet resource, named "web", has 3 replicas, a minimum ready time of 10 seconds, 
+# and a termination grace period of 10 seconds. The selector for this stateful set matches the label "app: nginx"
+#  and the service name is "nginx".
+
+# The template for the stateful set has one container named "nginx" running the "k8s.gcr.io/nginx-slim:0.8" 
+# image and exposing port 80. The container has a volume mount named "www" that is mounted to the path "/usr/share/nginx/html".
+
+# The stateful set also has a volume claim template named "www", with a storage class of "my-storage-class" 
+# and a requested storage size of 1 Gi. The access mode for this volume claim is "ReadWriteOnce".
+
+
+

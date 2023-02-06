@@ -1,0 +1,46 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment
+  labels:
+    app: web
+spec:
+  selector:
+    matchLabels:
+      app: web
+  replicas: 5
+  strategy:
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: web
+    spec:
+      containers:
+      - name: nginx
+        image: nginx
+        ports:
+        - containerPort: 80
+        livenessProbe:
+          httpGet:
+            path: /
+            port: 80
+          initialDelaySeconds: 5
+          periodSeconds: 5
+
+
+# This is a Kubernetes deployment manifest written in YAML, defining a deployment named "nginx-deployment" that runs 
+# 5 replicas of an nginx container. The deployment uses a RollingUpdate strategy and listens on port 80. 
+# The selector specifies that the deployment should manage pods with the label "app: web", 
+# and the template defines the metadata and spec of the pods to create.
+
+# In addition to the previous information, the configuration has specified a liveness probe for the container. 
+# The liveness probe is an HTTP GET request to the path "/" on port 80, 
+# with an initial delay of 5 seconds and a period of 5 seconds. The liveness probe is used to check the health of the container, 
+# and if it fails, the container will be restarted.
+
+# The template.spec.containers.livenessProbe field defines what the kubelet should check to ensure that the pod is alive: 
+
+# httpGetspecifies that the kubelet should try a HTTP request on the root of the web server on port 80.
+# periodSecondsspecifies how often the kubelet should perform a liveness probe.
+# initialDelaySecondsspecifies how long the kubelet should wait after the pod starts, before performing the first probe.

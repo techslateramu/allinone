@@ -1,0 +1,45 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment
+  labels:
+    app: web
+spec:
+  selector:
+    matchLabels:
+      app: web
+  replicas: 5
+  strategy:
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: web
+    spec:
+      volumes:
+      - name: my-pv-storage
+        persistentVolumeClaim:
+          claimName: my-pv-claim
+      containers:
+      - name: nginx
+        image: nginx
+        ports:
+        - containerPort: 80
+        volumeMounts:
+        - mountPath: "/usr/share/nginx/html"
+          name: my-pv-storage
+
+
+# This is a YAML file for a Kubernetes Deployment. 
+# It creates a Deployment with 5 replicas of a container running the Nginx web server. 
+# The deployment is labeled with app: web, 
+# and the selector matches pods with the same label. 
+# The type in the strategy field is set to RollingUpdate, meaning that new replicas will be gradually created 
+# and old ones terminated, ensuring no downtime for the application.
+
+# The Deployment also uses a Persistent Volume Claim named my-pv-claim as a volume source, 
+# mounted at the path /usr/share/nginx/html in the container. 
+# The data stored in this volume will persist even if the pods running the containers are deleted or recreated.
+
+
+

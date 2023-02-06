@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-pod
+spec:
+  initContainers:
+  - name: init-nginx
+    image: nginx:alpine
+    command: ["/bin/sh", "-c", "echo 'Initializing...'"]
+  containers:
+  - name: my-container
+    image: alpine:3.9
+    command: ["/bin/sh", "-c", "echo 'Running...' && sleep 3600"]
+
+
+# This is a YAML configuration for a Kubernetes Pod that has two containers: 
+# an "init-nginx" container and a "my-container". The "init-nginx" container is defined as an init container,
+#  and it will run first before the other containers in the Pod start. The "init-nginx" container uses the "nginx:alpine" image 
+#  and runs the command ["/bin/sh", "-c", "echo 'Initializing...'"] which just outputs the text "Initializing...". 
+#  The "my-container" uses the "alpine:3.9" image and runs the command ["/bin/sh", "-c", "echo 'Running...' && sleep 3600"]
+#   which outputs the text "Running..." and then waits for 3600 seconds.

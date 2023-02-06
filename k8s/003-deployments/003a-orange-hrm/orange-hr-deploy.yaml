@@ -1,0 +1,47 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orangehrm
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: orangehrm
+  template:
+    metadata:
+      labels:
+        app: orangehrm
+    spec:
+      containers:
+      - name: orangehrm
+        image: orangehrm/application:latest
+        ports:
+        - containerPort: 80
+        resources:
+          limits:
+            memory: "256Mi"
+            cpu: "500m"
+          requests:
+            memory: "128Mi"
+            cpu: "250m"
+      - name: database
+        image: mysql:5.7
+        env:
+        - name: MYSQL_ROOT_PASSWORD
+          value: password
+        ports:
+        - containerPort: 3306
+        resources:
+          limits:
+            memory: "256Mi"
+            cpu: "500m"
+          requests:
+            memory: "128Mi"
+            cpu: "250m"
+        volumeMounts:
+        - name: database-data
+          mountPath: /var/lib/mysql
+      volumes:
+      - name: database-data
+        persistentVolumeClaim:
+          claimName: orangehrm-pvc

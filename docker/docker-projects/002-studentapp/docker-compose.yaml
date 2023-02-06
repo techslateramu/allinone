@@ -1,12 +1,12 @@
 version: '3'
 services:
   studentfrontend:
-    image: student-frontend:1.0
+    image: student-frontend:2.0
     ports:
       - 9200:80
   studentbackend:
     hostname: studentbackend
-    image: student-backend:1.0
+    image: student-backend:2.0
     ports:
       - 9300:9300
     depends_on:

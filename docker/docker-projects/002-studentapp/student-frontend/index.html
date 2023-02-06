@@ -43,30 +43,26 @@
       const age = formData.get('age');
 
       fetch('http://localhost:9300/save-student-data', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        name,
-        city,
-        age,
-      }),
-    })
-    .then((response) => {
-      if (response.status === 200) {
-        studentDataDiv.innerHTML = `<p>Student data saved successfully!</p>`;
-      }
-      return response.json();
-    })
-    .then((data) => {
-      studentDataDiv.innerHTML = `
-        <p>Name: ${data.name}</p>
-        <p>City: ${data.city}</p>
-        <p>Age: ${data.age}</p>
-      `;
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          name,
+          city,
+          age,
+        }),
+      })
+      .then((response) => {
+        if (response.status === 200) {
+          studentDataDiv.innerHTML = `<p>Student data saved successfully!</p>`;
+        }
+        return response.json();
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+      });
     });
-
   </script>
 </body>
 </html>

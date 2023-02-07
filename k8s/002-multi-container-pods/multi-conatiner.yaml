@@ -1,37 +1,23 @@
-apiVersion: apps/v1
-kind: Deployment
+apiVersion: v1
+kind: Pod
 metadata:
-  name: web-deployment
+  name: multi-container-pod
 spec:
-  replicas: 2
-  selector:
-    matchLabels:
-      app: web
-  template:
-    metadata:
-      labels:
-        app: web
-    spec:
-      containers:
-        - name: nginx
-          image: nginx:latest
-          ports:
-            - containerPort: 80
-          resources:
-            limits:
-              cpu: 100m
-              memory: 128Mi
-            requests:
-              cpu: 100m
-              memory: 128Mi
-        - name: apache
-          image: httpd:latest
-          ports:
-            - containerPort: 8080
-          resources:
-            limits:
-              cpu: 100m
-              memory: 128Mi
-            requests:
-              cpu: 100m
-              memory: 128Mi
+  containers:
+  - name: container-1
+    image: nginx:latest
+    ports:
+    - containerPort: 80
+  - name: container-2
+    image: redis:alpine
+    ports:
+    - containerPort: 6379
+
+
+# This configuration creates a Pod named multi-container-pod with two containers: 
+# container-1 running nginx image and 
+# container-2 running redis image. 
+# The containers are exposed on the specified ports, 80 and 6379 respectively.
+
+
+

@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jenkins-deployment
+  annotations:
+    "kubernetes.io/change-cause": "Deploying version 2.389."
+
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: jenkins
+  template:
+    metadata:
+      labels:
+        app: jenkins
+    spec:
+      containers:
+      - name: jenkins
+        image: jenkins/jenkins:2.389-rhel-ubi9-jdk17
+        ports:
+        - containerPort: 8080
+      #   volumeMounts:
+      #   - name: jenkins-home
+      #     mountPath: /var/jenkins_home
+      # volumes:
+      # - name: jenkins-home
+      #   persistentVolumeClaim:
+      #     claimName: jenkins-pvc

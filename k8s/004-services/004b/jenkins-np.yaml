@@ -1,0 +1,49 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jenkins-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: jenkins
+  template:
+    metadata:
+      labels:
+        app: jenkins
+    spec:
+      containers:
+      - name: jenkins
+        image: jenkins/jenkins:2.389-rhel-ubi9-jdk17
+        ports:
+        - containerPort: 8080
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: jenkins-service
+spec:
+  selector:
+    app: jenkins
+  ports:
+  - name: http
+    port: 80
+    targetPort: 8080
+    nodePort: 30080
+  type: NodePort
+
+
+# Here is a summary of the steps to create a Kubernetes Service of type NodePort for the deployment:
+
+# Define a Service resource in the Kubernetes API with apiVersion: v1 and kind: Service.
+# In the metadata section:
+# Provide a name for the service using the name field, such as jenkins-service.
+# In the spec section:
+# Define the selector field to specify the labels of the pods that this service should be exposed to, such as app: jenkins.
+# Define the ports field to list the ports that should be exposed from the service, such as port 80 mapping to the target port 8080 on the pod.
+# Define the targetPort field to specify the port on the pod that should be exposed by the service, such as 8080.
+# Define the nodePort field to assign a static port on each node of the cluster, such as 30080.
+# Set the type field to NodePort to indicate that the service should be exposed on each node in the cluster and accessible from outside the cluster on the specified nodePort.
+
+

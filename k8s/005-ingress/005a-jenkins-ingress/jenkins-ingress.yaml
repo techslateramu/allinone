@@ -1,0 +1,60 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jenkins-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: jenkins
+  template:
+    metadata:
+      labels:
+        app: jenkins
+    spec:
+      containers:
+      - name: jenkins
+        image: jenkins/jenkins:2.389-rhel-ubi9-jdk17
+        ports:
+        - containerPort: 8080
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: jenkins-service
+spec:
+  selector:
+    app: jenkins
+  ports:
+  - name: http
+    port: 80
+    targetPort: 8080
+  type: ClusterIP
+
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: example-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  rules:
+  - host: example.com
+    http:
+      paths:
+      - path: /jenkins
+        pathType: Prefix
+        backend:
+          service:
+            name: jenkins-service
+            port:
+              name: http
+      # - path: /app2
+      #   pathType: Prefix
+      #   backend:
+      #     service:
+      #       name: app2-service
+      #       port:
+      #         name: http

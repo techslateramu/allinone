@@ -30,24 +30,37 @@ spec:
   - name: http
     port: 80
     targetPort: 8080
-  type: LoadBalancer
+  type: ClusterIP
 
-# ---
-# apiVersion: networking.k8s.io/v1
-# kind: Ingress
-# metadata:
-#   name: example-ingress
-#   annotations:
-#     nginx.ingress.kubernetes.io/rewrite-target: /
-# spec:
-#   rules:
-#   - host: jenkins.example.com
-#     http:
-#       paths:
-#       - path: /jenkins
-#         pathType: Prefix
-#         backend:
-#           service:
-#             name: jenkins-service
-#             port:
-#               name: http
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: jenkins-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+    nginx.ingress.kubernetes.io/service-upstream: "true"
+    ingress.kubernetes.io/load-balancer-address-type: "External"
+spec:
+  rules:
+  - host: jenkins.example.com
+    http:
+      paths:
+      - path: /jenkins
+        pathType: Prefix
+        backend:
+          service:
+            name: jenkins-service
+            port:
+              name: http
+      - path: /grafana
+        pathType: Prefix
+        backend:
+          service:
+            name: grafana-service
+            port:
+              name: http
+  tls:
+  - hosts:
+    - jenkins.example.com
+    secretName: jenkins-tls

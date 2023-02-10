@@ -1,0 +1,75 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: jenkins-config
+data:
+  jenkins.xml: |
+    <?xml version='1.0' encoding='UTF-8'?>
+    <jenkins.model.JenkinsLocationConfiguration>
+      <adminAddress>Jenkins administrator e-mail address</adminAddress>
+      <jenkinsUrl>URL for Jenkins web interface</jenkinsUrl>
+    </jenkins.model.JenkinsLocationConfiguration>
+
+
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: jenkins-secret
+type: Opaque
+data:
+  username: cmFtdQ==              # this is base64 encoded username>
+  password: QFRlY2hTbGF0ZTc0OA==  # this is base64 encoded username>
+
+
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: jenkins-pvc
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 10Gi
+
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jenkins-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: jenkins
+  template:
+    metadata:
+      labels:
+        app: jenkins
+    spec:
+      containers:
+        - name: jenkins
+          image: jenkins/jenkins:lts
+          ports:
+            - name: http
+              containerPort: 8080
+            - name: jnlp
+              containerPort: 50000
+          volumeMounts:
+            - name: jenkins-data
+              mountPath: /var/jenkins_home
+          env:
+            - name: JENKINS_OPTS
+              value: --prefix=/jenkins
+          envFrom:
+            - configMapRef:
+                name: jenkins-config
+            - secretRef:
+                name: jenkins-secret
+      volumes:
+        - name: jenkins-data
+          persistentVolumeClaim:
+            claimName: jenkins-pvc

@@ -6,8 +6,8 @@ data:
   jenkins.xml: |
     <?xml version='1.0' encoding='UTF-8'?>
     <jenkins.model.JenkinsLocationConfiguration>
-      <adminAddress>Jenkins administrator e-mail address</adminAddress>
-      <jenkinsUrl>URL for Jenkins web interface</jenkinsUrl>
+      <adminAddress>admin@techslate.com</adminAddress>
+      <jenkinsUrl>jenkins.techslate.com</jenkinsUrl>
     </jenkins.model.JenkinsLocationConfiguration>
 
 

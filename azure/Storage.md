@@ -9,6 +9,9 @@
 
  ### AZ Command : Example
 
+- Make sure to install 'az cli' utility - to check run "az version" command
+- "az login" - use this command to login to your az account
+
 ```
 az group create --name <resource_group_name> --location <location>
 ```
@@ -28,6 +31,11 @@ az storage account create --name techslate1234 --resource-group storage-az-cli -
 <br>
 
 ## POWERSHELL
+
+ ### PowerShell Pre-requisites
+
+- "Install-Module -Name Az" - To install AZ modules in PowerShell
+- "Connect-AzAccount" - use this command to login to your az account
 
  ### PowerShell Command : Example
 

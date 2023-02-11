@@ -40,3 +40,10 @@ spec:
             name: horo-service
             port: 
               number: 80
+      - path: /
+        pathType: Prefix
+        backend:
+          service: 
+            name: tsapps-service
+            port: 
+              number: 80

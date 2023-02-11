@@ -1,7 +1,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: app
+  name: apps
   annotations:
     kubernetes.io/ingress.class: addon-http-application-routing
     nginx.ingress.kubernetes.io/rewrite-target: /
@@ -24,6 +24,13 @@ spec:
         backend:
           service: 
             name: color-service
+            port: 
+              number: 80
+      - path: /horo
+        pathType: Prefix
+        backend:
+          service: 
+            name: horo-service
             port: 
               number: 80
       - path: /horo

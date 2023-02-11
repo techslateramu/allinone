@@ -14,9 +14,9 @@ spec:
     spec:
       containers:
         - name: color
-          image: linuxramu/color:2.0
+          image: linuxramu/color:2.5
           ports:
-            - containerPort: 8080
+            - containerPort: 80
 ---
 apiVersion: v1
 kind: Service
@@ -28,5 +28,5 @@ spec:
   ports:
     - name: http
       port: 80
-      targetPort: 8080
+      targetPort: 80
   type: ClusterIP

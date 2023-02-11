@@ -21,7 +21,7 @@ az storage account create --name <storage-account-name> --resource-group <resour
 az group create --name storage-az-cli --location eastus
 ```
 ```
-az storage account create --name mystorageaccount123 --resource-group storage-az-cli --location eastus --sku Standard_LRS --kind StorageV2 --encryption-services blob --https-only true
+az storage account create --name techslate1234 --resource-group storage-az-cli --location eastus --sku Standard_LRS --kind StorageV2 --encryption-services blob --https-only true
 ```
 
 <hr>
@@ -45,7 +45,7 @@ New-AzStorageAccount -Name <account_name> -ResourceGroupName <resource_group_nam
 New-AzResourceGroup -Name storage-az-powershell -Location eastus
 ```
 ```
- New-AzStorageAccount -Name mystorageaccount1234 -ResourceGroupName storage-az-powershell  -Location eastus -SkuName Standard_LRS -Kind StorageV2 -EncryptionServices blob -EnableHttpsTrafficOnly $true
+ New-AzStorageAccount -Name techslate12345 -ResourceGroupName storage-az-powershell  -Location eastus -SkuName Standard_LRS -Kind StorageV2 -EncryptionServices blob -EnableHttpsTrafficOnly $true
 ```
 
 <br>

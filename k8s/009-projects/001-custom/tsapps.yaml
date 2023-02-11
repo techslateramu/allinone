@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: tsapps-deployment
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: tsapps
@@ -29,4 +29,4 @@ spec:
     - name: http
       port: 80
       targetPort: 80
-  type: LoadBalancer
+  type: ClusterIP

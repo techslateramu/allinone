@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <title>Color Selector</title>
+  <style>
+    .color-box {
+      width: 100px;
+      height: 100px;
+      margin: 20px;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Color Selector</h1>
+    <div class="form-group">
+      <label for="colorSelect">Select a color:</label>
+      <select class="form-control" id="colorSelect">
+        <option value="">Select a color</option>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+        <option value="yellow">Yellow</option>
+        <option value="pink">Pink</option>
+      </select>
+    </div>
+    <div class="color-box" id="selectedColor"></div>
+  </div>
+  <script>
+    const colorSelect = document.getElementById("colorSelect");
+    const selectedColor = document.getElementById("selectedColor");
+
+    colorSelect.addEventListener("change", function() {
+      selectedColor.style.backgroundColor = this.value;
+    });
+  </script>
+      <h4><center>TechSlate Limited</center></h4>
+
+</body>
+</html>

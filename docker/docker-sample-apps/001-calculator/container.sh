@@ -1,3 +1,3 @@
-docker build . -t calc:2.0
-docker tag calc:2.0 linuxramu/calc:2.0
-docker push linuxramu/calc:2.0
+docker build . -t calc:2.5
+docker tag calc:2.5 linuxramu/calc:2.5
+docker push linuxramu/calc:2.5

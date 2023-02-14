@@ -191,7 +191,7 @@ This will delete the local branch. If you want to delete a remote branch, you ca
 This will delete the remote branch. Note that you can only delete a branch if it has been fully merged into your current branch. If you have unmerged changes, you will need to resolve them before deleting the branch.
 
 
-## **Que 13. Can you explain the process of merging a Git branch?** ##
+## **Q13. Can you explain the process of merging a Git branch?** ##
 
 ### Ans:
 
@@ -233,6 +233,32 @@ Here are the steps to merge a branch in Git:
 And that's it! These are the basic steps to merge a branch in Git.
 
 
+## **Q14.Can you explain the process of reverting a Git commit?** 
+
+### Ans:
+
+To revert a Git commit, you can use the git revert command followed by the commit hash of the commit you want to revert. This will create a new commit that undoes the changes made in the original commit.
+
+Here are the steps to revert a Git commit:
+
+- Find the commit hash of the commit you want to revert by running git log.
+- Run git revert <commit-hash> to create a new commit that reverts the changes made in the original commit.
+- Review the changes in the new commit by running git diff or opening the file in an editor.
+- Commit the changes by running git commit -m "Revert <commit-hash>"
+- Push the changes to the remote repository by running git push.
+
+It's important to note that git revert does not delete the original commit. Instead, it creates a new commit that undoes the changes made in the original commit. This means that you can revert a revert commit to bring back the original changes.
+
+
+## **Q15.Can you explain the difference between a Git stash and a Git stash pop?** 
+
+### Ans:
+
+Yes, a Git stash is a command that allows you to temporarily save changes that are not ready to be committed, while Git stash pop is a command that applies the changes saved in the most recent stash and removes it from the stash list.
+
+When you run `git stash`, Git saves the changes to a "stash" and reverts your working directory to the last committed state. This is useful when you need to temporarily switch to a different branch or work on a different task.
+
+Later, when you want to retrieve the changes you stashed, you can use `git stash pop`. This command applies the changes from the most recent stash to your working directory and removes it from the stash list. If you want to apply the changes from a specific stash other than the most recent one, you can use `git stash apply` followed by the stash reference, such as `git stash apply stash@{2}`.
 
 
 

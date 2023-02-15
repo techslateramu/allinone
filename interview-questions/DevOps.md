@@ -110,7 +110,7 @@ Overall, automation is an essential component of a successful DevOps approach, a
 
 ### Ans:
 
-![DevOps](images/infrastructureCode.png)
+![DevOps](images/InfrastructureCode.png)
 
 - Infrastructure as code (IAC) is the practice of managing and provisioning computing infrastructure through machine-readable definition files, rather than through manual configuration or physical hardware. The idea is to treat infrastructure as if it were code, using the same development, testing, and deployment practices that software engineers use for application code.
 

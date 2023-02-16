@@ -6,5 +6,5 @@ This page will contain all the interview questions and answers.
 
 S.No| Topic | Link |
 |---|---------|-------------|
-|03| Linux | [Linux Interview Questions](Linux.md) |
-
+|01| Git | [Git Interview Questions](Git.md) |
+|02| DevOps  | [ DevOps Interview Questions](DevOps.md) |

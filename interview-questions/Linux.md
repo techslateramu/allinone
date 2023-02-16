@@ -2,9 +2,9 @@
 
 # Introduction 
 
-## *This page contains all the interview questions related to DevOps.*
+## *This page contains all the interview questions related to Linux.*
 
-![Linux](images/Linux.png)
+![Linux](images/Pinguino-Linux.png)
 
 ## **Q1. Can you explain the difference between a Linux distribution and the Linux kernel?** ##
 

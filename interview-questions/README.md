@@ -6,5 +6,5 @@ This page will contain all the interview questions and answers.
 
 S.No| Topic | Link |
 |---|---------|-------------|
-|01| Docker | [Docker Interview Questions](Docker.md) |
-|02| Kubernetes  | [K8S Interview Questions](K8S.md) |
+|04| Docker | [Docker Interview Questions](Docker.md) |
+

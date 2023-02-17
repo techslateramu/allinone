@@ -39,5 +39,15 @@ That's it! These commands will create the resource group, storage account, and f
 <hr>
 
 
+##  Steps to Create Resource Group, Storage Account, and Function App using POWERSHELL
 
 
+```
+New-AzResourceGroup -Name rg-ts-001 -Location eastus
+
+New-AzStorageAccount -ResourceGroupName rg-ts-001 -Name stts001rand -SkuName Standard_LRS -Location eastus
+
+New-AzFunctionApp -Name fun-ts-001 -ResourceGroupName rg-ts-001 -StorageAccount stts001rand -Runtime PowerShell -FunctionsVersion 4 -Location eastus
+
+New-AzFunctionApp -Name fun-ts-002 -ResourceGroupName rg-ts-001 -StorageAccount stts001rand -Runtime python -FunctionsVersion 3 -Location eastus
+```

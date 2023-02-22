@@ -79,6 +79,20 @@ if (-not $dbeaverInstalled) {
     Write-Output " ***************************** DBeaver is already installed. ***************************** "
 }
 
+# Check if Azure Data Studio is installed
+$azDataStudioInstalled = Get-Command code-insiders -ErrorAction SilentlyContinue
+
+# If Azure Data Studio is not installed, install it
+if (-not $azDataStudioInstalled) {
+    Write-Output " ***************************** Installing Azure Data Studio... ***************************** "
+    # Install Azure Data Studio using Chocolatey
+    choco install azuredatastudio -y
+    Write-Output " ***************************** Azure Data Studio installed. ***************************** "
+} else {
+    Write-Output " ***************************** Azure Data Studio is already installed. ***************************** "
+}
+
+
 
 
 #Check if Maven is installed

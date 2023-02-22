@@ -11,9 +11,14 @@
 # Docker Compose-Best Practices 
 
 
+<<<<<<< HEAD
 ![DevOps](images/docker-compose.jpg)
 
 ## **Practice 1:**##
+=======
+
+## **Practice 1:** ##
+>>>>>>> 3f1b36a268c40eb554a62dac600649ad1b1b9421
 
 - Keep your docker-compose file version controlled (SCM) and next to the application code. 
 Your Docker Compose file is there to describe your application components. This means any changes in your application should be reflected in your Docker Compose file. Changes to the port of a service or a new service added to the application should be made in your Docker Compose file as well.
@@ -85,36 +90,61 @@ For a service, group the parameter categories-
     
 # Docker File-Best Practices
 
+<<<<<<< HEAD
 ![DevOps](images/dockerfile-icon.webp)
 
 ## **Practice 1 : Use a.dockerignore file.** ##
+=======
+
+## **Practice 1 : Use a.dockerignore file.
+>>>>>>> 3f1b36a268c40eb554a62dac600649ad1b1b9421
 
 - The best way is to put the Dockerfile inside the empty directory and then add only the application and configuration files required for building the Docker image.
 
 - To increase the build’s performance, you can exclude files and directories by adding an a.dockerignore file to that directory as well.
 
 
+<<<<<<< HEAD
 ## **Practice 2: Containers should be immutable and ephemeral.** ##
+=======
+## **Practice 2: Containers should be immutable and ephemeral.
+>>>>>>> 3f1b36a268c40eb554a62dac600649ad1b1b9421
 
 - The container created with the image produced by Dockerfile should be ephemeral and immutable. In other words, the container should be destroyed and a new one built and put in place with an absolute minimum set-up and configuration.
 
 
+<<<<<<< HEAD
 ## **Practice 3: Minimize the number of layers and consolidate instructions.** ##
+=======
+## **Practice 3: Minimize the number of layers and consolidate instructions.
+>>>>>>> 3f1b36a268c40eb554a62dac600649ad1b1b9421
 
 - Each instruction in the Dockerfile adds an extra layer to the Docker image. The number of instructions and layers should be kept to a minimum as this ultimately affects build performance and time.
 
 
+<<<<<<< HEAD
 ## **Practice 4: Avoid installing unnecessary packages** ##
+=======
+## **Practice 4: Avoid installing unnecessary packages
+>>>>>>> 3f1b36a268c40eb554a62dac600649ad1b1b9421
 
 In order to reduce complexity, dependencies, file sizes, and build times, avoid installing unnecessary packages.
 
 
+<<<<<<< HEAD
 ## **Practice 5 : Sort multi-line arguments** ##
+=======
+## **Practice 5 : Sort multi-line arguments
+>>>>>>> 3f1b36a268c40eb554a62dac600649ad1b1b9421
 
 Sorting multiline arguments alphanumerically will help avoid duplication of packages and make the list much easier to update.
 
 
+<<<<<<< HEAD
 ## **Practice 6 : Build cache** ##
+=======
+## **Practice 6 : Build cache
+>>>>>>> 3f1b36a268c40eb554a62dac600649ad1b1b9421
 
 - While building an image, Docker will step through the instructions mentioned in the Dockerfile, executing them in chronological order. As each instruction is examined, Docker will look for an existing image layer in its cache that it can reuse, rather than creating a new image layer.
 
@@ -129,6 +159,7 @@ Sorting multiline arguments alphanumerically will help avoid duplication of pack
 - Once the cache is invalidated, all subsequent Dockerfile commands will generate new images and the cache will not be used.
 
 
+<<<<<<< HEAD
 ## **Practice 7 : Build every time** ##
 
 - Building docker images is very fast as docker makes use of previously cached build steps (default). By building the image every time, one can use containers as reliable artifacts. For example, one can go back and run a container from previous docker image to inspect a problem, or can run long tests on the previous version image while editing the code.
@@ -145,6 +176,17 @@ CMD simply sets a command to run in the image if no arguments are passed to dock
 - If the Dockerfile uses only CMD, the specified command is executed if no arguments are passed to docker run.
 - If the Dockerfile uses only ENTRYPOINT, the arguments passed to docker run are always passed to the entrypoint; the entrypoint is executed if no arguments are passed to docker run.
 - If the Dockerfile declares both ENTRYPOINT and CMD and no arguments are passed to docker run, then the argument(s) to CMD are passed to the declared entrypoint.
+=======
+Practice 7 : Build every time
+Building docker images is very fast as docker makes use of previously cached build steps (default). By building the image every time, one can use containers as reliable artifacts. For example, one can go back and run a container from previous docker image to inspect a problem, or can run long tests on the previous version image while editing the code.
+Practcie 8 :Dockerfile for Development Environment
+For a development environment, map your source code on the host to a container using a volume. This enables to choose the editor of your choice on the host and test the application right away in the container. This is done by mounting the application build folder as a volume rather than copying the build artifact using the ADD command in the Dockerfile.
+Practice 9: Understand CMD and ENTRYPOINT
+CMD simply sets a command to run in the image if no arguments are passed to docker run, while ENTRYPOINT is meant to make your image behave like a binary.
+If the Dockerfile uses only CMD, the specified command is executed if no arguments are passed to docker run.
+If the Dockerfile uses only ENTRYPOINT, the arguments passed to docker run are always passed to the entrypoint; the entrypoint is executed if no arguments are passed to docker run.
+If the Dockerfile declares both ENTRYPOINT and CMD and no arguments are passed to docker run, then the argument(s) to CMD are passed to the declared entrypoint.
+>>>>>>> 3f1b36a268c40eb554a62dac600649ad1b1b9421
 
 
 

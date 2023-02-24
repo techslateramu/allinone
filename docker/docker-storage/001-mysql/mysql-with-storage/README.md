@@ -33,6 +33,7 @@ Docker compose is a tool developed to define and share multi-container applicati
 
 **A text editor:** You will need a text editor to create and edit the docker-compose.yml file that defines the configuration for your SonarQube and Postgres containers. Some popular text editors include Visual Studio Code, Sublime Text, and Atom.
 
+**DBeaver:** DBeaver is a free, open source, graphical database management tool for database developers and administrators.
 ***
 
 # **How to run mysql image with storage?**
@@ -103,7 +104,6 @@ volumes:
 - ## We can see the Database in the left side , if we want to create more databases we can create it here.
 
 ![Visual studio page](images/database.png)
-
 
 ![Visual studio page](images/create.png)
 

@@ -1,13 +1,13 @@
 ![TechSlate](../../../global/images/ts.png)
 
-# **How to run mongo image with storage**
+# **How to run mongo image without storage**
 
 # Table of contents
 1.[Introduction](#introduction)
 
 2.[Prerequisites](#pre-requisites)
 
-3.[How to run mongo image with storage?](#how-to-run-mongo-image-with-storage-1)
+3.[How to run mongo image without storage?](#how-to-run-mongo-image-without-storage-1)
 
 ## **Introduction**
 
@@ -42,7 +42,7 @@ MongoDB is an open-source document-oriented database that is designed to store a
 
 ***
 
-# **How to run mongo image with storage?**
+# **How to run mongo image without storage?**
 
 - ## First create a folder with appropriate title .
 
@@ -58,13 +58,8 @@ services:
   mongo:
     image: mongo:latest
     container_name: mongo-server
-    volumes:
-      - mongodb-data:/data/db
     ports:
       - "27017:27017"
-volumes:
-  mongodb-data:
-
 ```
 
 - ## Once our docker-compose file is ready , will open a New Terminal and get into that respective folder
@@ -79,7 +74,7 @@ volumes:
 
 ![Visual studio page](images/container.png)
 
-- ## Also, we can see that Volume ```mongo-with-storage-mongodb-data``` is in use
+- ## This compose file does not mount any volume as we haven't mentioned it , but we can see volume is saved but they dont ahave references.
 
 ![Visual studio page](images/volume.png)
 
@@ -91,7 +86,7 @@ volumes:
 
 ![Visual studio page](images/Studio3T.png)
 
-- ## Enter the port number in URL i.e. ```27017```
+- ## Enter the port number in URL i.e. ```27017``` , Click on Next.
 
 ![Visual studio page](images/connect.png)
 

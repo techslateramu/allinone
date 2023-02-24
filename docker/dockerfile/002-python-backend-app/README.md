@@ -7,7 +7,7 @@
 
 2.[Prerequisites](#**<Pre-requisites>**)
 
-3.[How to create Dockerfile for HTML Application?](#how-to-create-dockerfile-for-html-application)
+3.[How to create Dockerfile for python Application?](#how-to-create-dockerfile-for-python-application)
 
 
 ## **Introduction**
@@ -154,48 +154,52 @@ Example:
 **A text editor:** You will need a text editor to create and edit the dockerfile that defines the configuration for your sample application. Some popular text editors include Visual Studio Code, Sublime Text, and Atom.
 
 
-# **How to create Dockerfile for HTML Application?**
+
+# **How to create Dockerfile for Python Application?**
 
 - ## First create a folder with appropriate title which represents your applicaton.
 
 ![Visual studio page](images/folder.png)
 
-  Here as we are creating docker file for HTML Application we named the folder as 
+  Here as we are creating docker file for python Application we named the folder as 
 
 Example:
 
 ```
-001-html-web-app
+002-python-backend-app
 ```
 
 ***
 
-- ## Now, lets create another folder under that and will name it as  ```web app```.
+- ## Now, lets create another folder under that and will name it as  ```app```.
 
-![Visual studio page](images/webapp.png)
+![Visual studio page](images/app.png)
 
-- ## Under which will create an  ```index.html ``` file which acts as a front-end , which specifies the features which should reflect on application web page.
+- ## Under which will create an  ```app.py``` file which acts as a Back-end , which focuses on everything you can’t see on a website.
 
 
-- ## After which will create a ```Dockerfile``` under ```001-html-web-app``` folder.
+- ## After which will create a ```Dockerfile``` under ```002-python-backend-app``` folder.
 
 ![Visual studio page](images/dockerfile.png)
 
 - ## In dockerfile we have mentioned required syntax for creating application.
 
 ```
-FROM nginx:latest
+FROM python:3.8
 
-COPY web-app /usr/share/nginx/html
+# Install Flask and the Flask CORS extension
+RUN pip install flask flask_cors
 
-EXPOSE 80
+# Copy the app.py file to the container
+COPY app/app.py /app/app.py
+
+# Set the working directory to the app directory
+WORKDIR /app
+
+# Run the app when the container is started
+CMD ["python", "app.py"]
+
 ```
-
-> FROM represting the base image that is ```nginx```.
-
-> COPY is copying ```index.html file```to the container.
-
-> EXPOSE representing the port number where our application should run i.e. ```80```
 
 
 - ## Once our syntax is ready , will open a New Terminal and get into that respective folder
@@ -206,29 +210,48 @@ EXPOSE 80
 - ## once we finish writing dockerfile we need to build our own image by giving a follwing command :
 
   ```
-  docker build . -t webapp-devops:1.0
+  docker build . -t backendapp:1.0
   ```
 
 ![Visual studio page](images/dockerbuild.png)
 
 - ## we can give any name to the image, in this scenario we have given it as ;
 
-  ``webapp-devops:1.0 ``
+  ``backendapp:1.0 ``
 
 - ## once we build our own image , we need to run , to run it we need to give following command;
 
  ```
-  docker run -d -p 8010:80 webapp-devops:1.0
+ docker run -d -p 8008:3000 backendapp:1.0
  ```
 ![Visual studio page](images/dockerrun.png)
 
 
-- ## Now let's open any of the browser and run ```localhost:8010``` to see if my application is running.
+- ## Now let's open any of the browser and run ```localhost:8008/hello``` to see if our hello world is running as we mentioned  ```app.py ```.
+![Visual studio page](images/hello.png)
+
+***
 
 ![Visual studio page](images/localhost.png)
 
-- ## Now we can see that our application is running successfully.
+***
 
-![Visual studio page](images/app.png)
+- ## Now we can see that our hello world is running successfully.
 
-## So this is how we create a dockerfile to create a sample HTML Application
+![Visual studio page](images/helloworld.png)
+
+
+- ## Now if we want to add two integers and see if its summing up , lets run ```localhost:8008/add/2/9``` to see if its summing up both the numbers
+![Visual studio page](images/add.png)
+
+![Visual studio page](images/11.png)
+
+- ## We can even change the numbers and try it.
+
+![Visual studio page](images/1120.png)
+
+
+
+## So this is how we create a dockerfile to create a sample python Backend Application
+
+

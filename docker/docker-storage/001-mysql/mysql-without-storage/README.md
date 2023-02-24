@@ -7,7 +7,7 @@
 
 2.[Prerequisites](#pre-requisites)
 
-3.[How to run mysql image with storage?](#how-to-run-mysql-image-with-storage-1)
+3.[How to run mysql image without storage?](#how-to-run-mysql-image-without-storage)
 
 ## **Introduction**
 
@@ -35,7 +35,7 @@ Docker compose is a tool developed to define and share multi-container applicati
 
 ***
 
-# **How to run mysql image with storage?**
+# **How to run mysql image without storage?**
 
 - ## First create a folder with appropriate title .
 
@@ -50,15 +50,11 @@ version: '3'
 services:
   mysql:
     image: mysql:latest
-    container_name: mysql-server
     environment:
       MYSQL_ROOT_PASSWORD: password
-    volumes:
-      - db-data:/var/lib/mysql
+      MYSQL_DATABASE: mydb
     ports:
       - "3306:3306"
-volumes:
-  db-data:
 
 ```
 
@@ -75,7 +71,7 @@ volumes:
 
 ![Visual studio page](images/container.png)
 
-- ## Also, we can see that Volume ```mysql-with-stoarge_db-data``` is in use
+- ## This compose file does not mount any volume as we haven't mentioned it , but we can see volume is saved but they dont ahave references.
 
 ![Visual studio page](images/volume.png)
 

@@ -74,6 +74,12 @@ kubectl get pods
 
 ![Visual studio page](images/path.png)
 
+- ## Run the following command
+
+```
+kubectl apply -f nginx.yaml
+```
+![Visual studio page](images/apply.png)
 
 - ## Now , lets run kubectl get pods to see if our nginx pod is running.
 

@@ -7,7 +7,7 @@
 
 2.[Prerequisites](#pre-requisites)
 
-3.[How to run ingress ?](#)
+3.[How to run ingress ?](#how-to-run-ingress-1)
 
 ## **Introduction**
 

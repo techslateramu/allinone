@@ -91,7 +91,7 @@ volumes:
 
 ![Visual studio page](images/Studio3T.png)
 
-- ## Enter the port number in URL i.e. ```27017```
+- ## Enter the port number in URL i.e. ```27017``` , Click on Next.
 
 ![Visual studio page](images/connect.png)
 

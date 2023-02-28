@@ -1,3 +1,5 @@
+![TechSlate](../../global/images/ts.png)
+
 # Kubernetes Cheatsheet
 
 This cheatsheet contains a list of the top 50 commonly used `kubectl` commands.

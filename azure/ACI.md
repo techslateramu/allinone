@@ -1,3 +1,5 @@
+![TechSlate](../global/images/ts.png)
+
 # To create Azure Container Instance, using AZ-CLI, follow below steps
 
 

@@ -1,3 +1,5 @@
+![TechSlate](../global/images/ts.png)
+
 # To create webapp (app-service), using AZ-CLI, follow below steps
 
 

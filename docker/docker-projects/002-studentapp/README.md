@@ -1,5 +1,6 @@
 ![TechSlate](../../../global/images/ts.png)
 
+
 # **How to run a Sample Student Application**
 
 # Table of contents

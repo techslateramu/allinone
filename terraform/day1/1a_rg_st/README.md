@@ -1,3 +1,5 @@
+![TechSlate](../../../global/images/ts.png)
+
 # Terraform Script: Create Azure Resource Group and Storage Account
 
 This Terraform script creates an Azure resource group and storage account. The resource group provides a logical container for the storage account and other resources you may create in Azure. The storage account provides a durable and highly available location for storing data, such as files, blobs, and queues.

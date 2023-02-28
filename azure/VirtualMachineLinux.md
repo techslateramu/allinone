@@ -1,3 +1,5 @@
+![TechSlate](../global/images/ts.png)s
+
 # Virtual Machine Creation through AZ CLI and PowerShell
 
 <br>

@@ -1,3 +1,5 @@
+![TechSlate](../../../global/images/ts.png)
+
 # Introduction
 This is a mini project of K8S, which deploys few services listed below and connect them through ingress.
 

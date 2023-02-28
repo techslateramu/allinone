@@ -1,4 +1,5 @@
-![TechSlate](../../../global/images/ts.png)
+![TechSlate](../../../../global/images/ts.png)
+
 
 # **How to run mysql image with storage**
 
@@ -115,3 +116,6 @@ volumes:
 
 ![Visual studio page](images/NEW.png)
 
+
+
+[def]: ../../../global/images/ts.png

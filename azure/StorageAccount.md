@@ -1,3 +1,4 @@
+![TechSlate](../global/images/ts.png)
 
 # Storage Account Creation through AZ CLI and PowerShell
 

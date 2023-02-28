@@ -1,4 +1,4 @@
-![TechSlate](../../../global/images/ts.png)
+![TechSlate](../../global/images/ts.png)
 
 # **How to run multiple k8s pods ?**
 # Table of contents

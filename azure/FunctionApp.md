@@ -1,3 +1,6 @@
+![TechSlate](../global/images/ts.png)
+
+
 ## How to use Azure CLI to create a resource group, a storage account, and a function app in the East US location
 
 ### Prerequisites

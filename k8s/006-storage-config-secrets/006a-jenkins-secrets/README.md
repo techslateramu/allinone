@@ -1,4 +1,4 @@
-[TechSlate](../../../global/images/ts.png)
+![TechSlate](../../../global/images/ts.png)
 
 # **How to create Storage ,ConfigMap , Secret in k8s ?**
 

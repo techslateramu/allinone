@@ -1,10 +1,11 @@
 ![TechSlate](../../../global/images/ts.png)
 
-# Terraform Script: Create Azure Resource Group and Storage Account
+# Terraform Script: Create Azure Resource Group and Storage Account using locals
 
 This Terraform script creates an Azure resource group and storage account. The resource group provides a logical container for the storage account and other resources you may create in Azure. The storage account provides a durable and highly available location for storing data, such as files, blobs, and queues.
 
-## Getting Started
+
+## Getting Started 
 
 To use this Terraform script, you'll need to have the following:
 
@@ -28,6 +29,7 @@ New-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\E
 ```
 
 ### Setup Environment Variables in Mac
+
 ```
 export ARM_TENANT_ID="VALUE_OF_TENANT_ID"
 export ARM_SUBSCRIPTION_ID="VALUE_OF_SUBSCRIPTION_ID"
@@ -36,41 +38,83 @@ export ARM_CLIENT_SECRET="VALUE_OF_CLIENT_SECRET"
 ```
 
 
+## ( Already If you have created Environment variables please ignore , and move to the next step )
+
+
+
+
 ## Usage
 
 - Open the `main.tf` file and edit the following variables as needed:
-- `name`: The name of the resource group and storage account to create.
-- `location`: The location of the resource group and storage account. For example, "eastus".
-- `account_tier`: The tier of the storage account. For example, "Standard".
-- `account_replication_type`: The replication type of the storage account. For example, "LRS".
 
-## main.tf
+## `main.tf`
+```
+# Create resource group
+resource "azurerm_resource_group" "main" {
+  name     = var.resource_group_name
+  location = var.location
+}
+
+# Create storage account
+resource "azurerm_storage_account" "main" {
+  name                     = var.storage_account_name
+  resource_group_name      = azurerm_resource_group.main.name
+  location                 = var.location
+  account_tier             = var.account_tier
+  account_replication_type = var.account_replication_type
+}
+```
+- Open the `variables.tf` file and edit the following variables as needed:
+
+
+## `variables.tf`
 
 ```
-provider "azurerm" {
-  features {}
+variable "resource_group_name" {
+  type        = string
+  description = "The name of the resource group to create."
+  default     = "example-rg"
 }
 
-# Create a resource group
-resource "azurerm_resource_group" "rg" {
-  name     = "my-resource-group"
-  location = "eastus"
+variable "location" {
+  type        = string
+  description = "The location of the resource group and storage account. For example, 'eastus'."
+  default     = "eastus"
 }
 
-# Create a storage account
-resource "azurerm_storage_account" "st" {
-  name                     = "mystorageaccount"
-  resource_group_name      = azurerm_resource_group.rg.name
-  location                 = azurerm_resource_group.rg.location
-  account_tier             = "Standard"
-  account_replication_type = "LRS"
+variable "storage_account_name" {
+  type        = string
+  description = "The name of the storage account to create."
+  default     = "examplestorageaccount"
+}
+
+variable "account_tier" {
+  type        = string
+  description = "The tier of the storage account. For example, 'Standard'."
+  default     = "Standard"
+}
+
+variable "account_replication_type" {
+  type        = string
+  description = "The replication type of the storage account. For example, 'LRS'."
+  default     = "LRS"
+}
+```
+- Open the `local.tf` file and edit the following variables as needed:
+
+## `local.tf`
+
+```
+locals {
+  org_name = "ts"  
+  resource_group_name = "${local.org_name}-rg-${var.location}-${var.app_name}-${var.environment}-${format("%02d", var.index)}"
+  storage_account_name = "${local.org_name}-st-${var.app_name}${var.environment}${format("%02d", var.index)}"
 }
 
 ```
 
 
-
-## Terraform Commands
+# Terraform Commands
 
 - ### Initialize
 
@@ -100,18 +144,7 @@ terraform plan
 ```
 terraform apply
 ```
-![Visual studio page](images/apply.png)
-
-- ## Now , you can go back to your portal and see if your Resource Group and Storage Account is created.
-
-![Visual studio page](images/portal.png)
 
 
-- ###  Destroy
-```
-terraform destroy
-```
-![Visual studio page](images/destroy.png)
 
-![Visual studio page](images/destroy1.png)
 

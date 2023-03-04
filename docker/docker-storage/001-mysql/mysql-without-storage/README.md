@@ -1,7 +1,7 @@
 ![TechSlate](../../../../global/images/ts.png)
 
 
-# **How to run mysql image with storage**
+# **How to run mysql image without storage**
 
 # Table of contents
 1.[Introduction](#introduction)

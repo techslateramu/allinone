@@ -2,6 +2,7 @@
 
 # Introduction 
 
+# Running Images
 
 ## Run nginx Image
 To run an nginx container using docker run, you can use the following command:

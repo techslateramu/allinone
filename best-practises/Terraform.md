@@ -6,6 +6,8 @@
 
 ![DevOps](images/terraform1.png)
 
+# Terraform Best Practices 
+
 
 ## **Practice 1: Host Terraform Code in the Git Repository** ## 
 

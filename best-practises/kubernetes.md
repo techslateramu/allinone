@@ -6,6 +6,7 @@
 
 ![DevOps](images/kuberneteslogo.png)
 
+# Kubernetes Best Practices
 
 ## **Practice1:**  Choosing the Right Kubernetes Object (Mandatory).** ##
 

@@ -10,7 +10,7 @@
 - test - will contain all the test scripts after installation and uninstallation
 
 
-# How to Run
+# How to Run the script to install devops tools .
 - User PowerShell terminal as Administrator
 - To run this script, save it to a file (e.g. install-devops-tools.ps1), <br>
 - Make it executable with the chmod command (e.g. chmod +x install-devops-tools.ps1). this will grant execution permissions to file <br>

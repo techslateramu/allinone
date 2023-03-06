@@ -1,5 +1,8 @@
+![TechSlate](../../../global/images/ts.png)
+
 # Introduction
-To write a shell script to add two numbers, you can use the following code:
+
+## To write a shell script to add two numbers, you can use the following code:
 
 
 # How to Run

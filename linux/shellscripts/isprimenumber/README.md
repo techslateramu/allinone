@@ -1,5 +1,8 @@
+![TechSlate](../../../global/images/ts.png)
+
 # Introduction
-Here is a simple script that takes a number as input and determines whether it is prime or not:
+
+## Here is a simple script that takes a number as input and determines whether it is prime or not:
 
 # How to Run
 To use this script, save it to a file (e.g. is_prime.sh) and make it executable with the command chmod +x is_prime.sh. Then you can run it like this:

@@ -26,7 +26,7 @@
 
 # How to run ?
 
-- ### To use this program, simply create a file called palindrome_check.py and add the code to it .
+- ### To use this program, simply create a file called `palindrome_check.py` and add the code to it .
 
 ![reverse-string](images/palindrome_check.png)
 

@@ -1,6 +1,6 @@
 ![TechSlate](../../../global/images/ts.png)
 
-# Shell Script to Find the Largest Number in an Array
+# Find the Largest Number in an Array
 
 ### This is a simple shell script that finds the largest number in an array of numbers. It uses a for loop to iterate through each element in the array and compare it with the current maximum value. If an element is greater than the current maximum, the maximum value is updated.
 

@@ -1,6 +1,6 @@
 ![TechSlate](../../../global/images/ts.png)
 
-# Shell Script to Display Current Date and Time
+# Display Current Date and Time
 
 ### This is a simple shell script that displays the current date and time using the date command.
 

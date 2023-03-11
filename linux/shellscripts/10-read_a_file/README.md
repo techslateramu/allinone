@@ -1,6 +1,6 @@
 ![TechSlate](../../../global/images/ts.png)
 
-# Shell Script to Read a File Line by Line and Perform a Specific Action on Each Line
+# Read a File Line by Line and Perform a Specific Action on Each Line
 
 ### This shell script allows you to read a file line by line and perform a specific action on each line. In the example script provided, the action is to replace all spaces with underscores and print the modified line to the console
 # Introduction

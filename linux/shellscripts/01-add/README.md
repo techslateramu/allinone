@@ -1,7 +1,7 @@
 
 ![TechSlate](../../../global/images/ts.png)
 
-# To write a shell script to add two numbers, you can use the following code:
+# Adding Two Numbers
 
 ### This is a simple Bash script that prompts the user for two numbers, calculates their sum, and displays the result
 

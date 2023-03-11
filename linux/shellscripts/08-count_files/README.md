@@ -1,6 +1,6 @@
 ![TechSlate](../../../global/images/ts.png)
 
-# Shell Script to Count Files in Directory
+#  Count Files in Directory
 
 ### This script counts the number of files in a directory..
 

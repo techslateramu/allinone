@@ -19,6 +19,6 @@
 |06|Sum Of Digits|[Sum Of Digits Program](06-sum_of_digits/README.md) |
 |07|Armstrong Number|[Armstrong Number Program](07-armstrong_number/README.md) |
 |08|Binary to Decimal Coversion|[Binary to Decimal Conversion Program](08-binary_to_decimal_conversion/README.md) |
-|09|Bubble Sort[Bubble sort  Program](09-bubble-sort/README.md) |
+|09|Bubble Sort|[Bubble sort  Program](09-bubble-sort/README.md) |
 |10|Merge Sort|[Merge sort Program](10-merge_sort/README.md) |
 |11|Kubernetes Cluster|[Program to run Kubernetes cluster and list the pods ](11-kubernetes_cluster/README.md) |

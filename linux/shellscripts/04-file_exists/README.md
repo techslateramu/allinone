@@ -46,7 +46,7 @@ chmod +x file-exists.sh
 
 
 ```
-./print_numbers.sh
+./file-exists.sh
 ```
 ![script](images/print.png)
 

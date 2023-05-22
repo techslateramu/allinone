@@ -1,116 +1,53 @@
 # Introduction
 
-This is the help page to install docker in windows machine 
+# Docker 
 
+![Docker](images/Docker.png)
 
-# How To 
+Docker is an open-source platform that allows developers to automate the deployment, scaling, and management of applications using containerization. Containers are lightweight and isolated environments that package an application and all its dependencies, including libraries and configuration files, into a single unit. Docker provides a standardized way to create, distribute, and run containers on any operating system.
 
-## Step 1 : Install WSL
+Here are some key concepts related to Docker:
 
-**Install WSL or make sure you have WSL Installed your machine.**
+- **Images**: Docker images are the building blocks of containers. They are read-only templates that contain everything needed to run an application, including the code, runtime, libraries, and system tools.
 
-### 1. **Lets first check if we have WSL installed in our system , by typing the below command in Powershell (Run as Administrator)** ###
+- **Containers**: A Dockerfile is a text file that defines the configuration of a Docker image. It contains a series of instructions to build the image, such as specifying the base image, copying files, installing dependencies, and configuring the runtime environment.
 
-**```wsl --list --verbose```**
+- **Docker Hub**: Docker Hub is a cloud-based registry that allows you to find, share, and store Docker images. It is the default public registry for Docker, hosting a vast collection of pre-built images for various applications and technologies.
 
-![WSL check](images/powershell.png)
+- **Docker Compose**: Docker Compose is a tool for defining and running multi-container Docker applications. It uses a YAML file to define the services, networks, and volumes required for your application stack, allowing you to manage multiple containers as a single unit.
 
-### 2. **If WSL is not installed in our system , lets install by following the below steps :** ###
-  
-- **Click the below link , which will direct you to Microsfot Document**
+- **Docker Swarm**: Docker Swarm is a native clustering and orchestration solution for Docker. It allows you to create and manage a swarm of Docker nodes, turning them into a single virtual Docker host. Swarm enables you to deploy and scale applications across multiple machines, providing high availability and load balancing.
 
-   https://learn.microsoft.com/en-us/windows/wsl/install-manual
+- **Docker Engine**: Docker Engine is the runtime environment for Docker. It runs and manages containers on a host machine, handling container execution, networking, storage, and other core functionalities.
 
-![WSL check](images/Microsoftdoc.png)
-
-- **Directly Jump to 4th step! and click on the WSL2 Linux kernel update package for x64 machines.**
-
-![WSL check](images/downloadWSL.png)
-
-- **You can see WSL Package Downloading.**
-
-![WSL check](images/downloading.png)
+These are just some of the fundamental concepts of Docker. Docker has become incredibly popular in the software development community due to its ability to simplify application deployment, improve scalability, and enhance development workflows.
 
 ***
 
-## Step 2 : WSL to PATH
+# How to Install Docker Desktop
 
-- **Add WSL path to env variable i.e. PATH**
-
-1. **Open WSL file location**
-
-![WSL check](images/location.png)
-
-***
-![WSL check](images/path.png)
-
-
-2. **Add the path to System Environment variables .**
-
-   ### Open the Edit the system environment variables.
-![WSL check](images/env.png)
-
-***
-   ### Click on Environment Variables .
-![WSL check](images/env-var.png)
-
-***
-   ### Click on Path and then Click on Edit .
-![WSL check](images/edit.png)
-
-***
-   ### Click on New and paste the path there . Click on OK.
-![WSL check](images/addpath.png)
-
-***
-
-## Step 3 : Download
-
-- **Download Docker Desktop and Install it.**
-
-1. **Go to your favourite Browser, and type "Docker Desktop".**
-
-![WSL check](images/Dockerdesktop.png)
-
-2. **According to your computer Operating system click on respective OS**
-
-![WSL check](images/DockerOS.png)
-
-3. **You can see Docker Desktop Downloading , it will take some time to download.**
-
-![WSL check](images/downloaddocker.png)
-
-4. **Once it is downloaded , click on the Docker Desktop , it will start installing**
-
-![WSL check](images/pack.png)
-
-**Docker Desktop Installed Succesfully. Click on Close..**
-
-![WSL check](images/installed.png)
-
-5. **Now ,Open your Docker Desktop , You can see Docker Running**
-
-![WSL check](images/Running.png)
-
-
-***
-
-
-## Step 4 :  How to verify
-- **Open Powershell Terminal and run below command**
-
-``` 
-docker run -d -p 80:80 docker/getting-started 
-``` 
-![WSL check](images/dockerrun.png)
-
-- **Open browser and enter url "localhost:80".**
-
-![WSL check](images/localhost.png)
-
-- **You should see Getting Started page Appearing.**
-
-![WSL check](images/gettingstarted.png)
+| Step | Description | Image |
+|------|-------------|-------|
+| **Prequisites** | | | |
+| **Step 1** | **Install WSL or make sure you have WSL Installed your machine.Lets first check if we have WSL installed in our system , by typing the below command in Powershell(RunasAdministrator)** **```wsl --list --verbose```**|![Step 1](images/powershell.png) |
+| **Step 1.a**| **If WSL is not installed in our system , lets install by following the below steps, Click the below link , which will direct you to Microsfot Document**     https://learn.microsoft.com/en-us/windows/wsl/install-manual |![Step 1.a](images/Microsoftdoc.png) |
+| **Step 1.b** | **Please follow all the 6 steps which are been mentioned in the document. And in the 4th step don’t forget to download the WSL2 Linux kernel update package, which is very much necessary for us to run the Docker Desktop You can see WSL Package Downloading.**|![Step 1.b](images/downloading.png) |
+| **Step 2** | **Now, once the package is downloaded, we need to add the WSL path to our System Environment Variables.**| |![Step 4](images/dockerrun.png) |
+| **Step 2.a**| **Go to the Search box and search for WSL.Click on the File Location**|![Step 2.a](images/wsl.png) |
+| **Step 2.b** | **Now, copy the path of WSL**|![Step 2.b](images/path.png) |
+| **Step 2.C** | **Now, search for Edit the System Environment variables in search box and open that.**|![Step 2.c](images/sysenv.png) |
+| **Step 2.d** | **Click on Environment variables**|![Step 2.d](images/env-var.png) |
+| **Step 2.e** | **Under System variables select Path and click on Edit.**|![Step 2.e](images/edit.png) |
+|     **Download Docker Desktop:**  | | | |
+| **Step 3** | **Go to your favourite Browser, and type "Docker Desktop Download” select the first link.**|![Step 3](images/Dockerdesktop.png) |
+| **Step 3.a** | **Click on the Download Docker Desktop button, you will see Docker desktop downloading.**|![Step 3.a](images/DockerOS.png) |
+| **Step 3.b** | **Once Docker desktop is downloaded, click on open file then you will see packages installing..**|![Step 3.b](images/packages.png) |
+| **Step 3.c** | **Once the installation is done, come back to your main Desktop, you will see Docker desktop on the screen, open the Docker desktop.**|
+| **Step 3.d** | **You will see Docker Desktop Running Successfully.**|![Step 3.c](images/desktop.png) |
+|     **How to Verify**  | | | |
+| **Step 4** | **Open PowerShell Terminal and run the following command**  ```docker run -d -p 80:80 docker/getting-started```|![Step 4](images/run.png) |
+| **Step 4.a** | **Open browser and enter url "localhost:80".**|![Step 4.a](images/local.png) |
+| **Step 4.a** | **You should see Getting Started Page Appearing.**|![Step 4.b](images/gettingstarted.png) |
 
 
 ***

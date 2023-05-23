@@ -19,7 +19,7 @@ metadata:
 type: Opaque
 data:
   username: cmFtdQ==              # this is base64 encoded username>
-  password: QFRlY2hTbGF0ZTc0OA==  # this is base64 encoded username>
+  password: QFRlY2hTbGF0ZTc0OA==  # this is base64 encoded password>
 
 
 ---

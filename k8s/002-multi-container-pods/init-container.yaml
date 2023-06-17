@@ -10,4 +10,6 @@ spec:
   containers:
   - name: actual-container
     image: nginx
-    command: ["/bin/sh", "-c", "echo 'Initalized after 60 seconds ..'"]
+    ports:
+    - containerPort: 8080
+      protocol: TCP

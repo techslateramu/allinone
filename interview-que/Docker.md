@@ -25,7 +25,7 @@
 - In summary, Docker is a tool for creating containers, while Kubernetes is a tool for managing those containers at scale. Docker provides the ability to package and distribute applications in a portable and efficient manner, while Kubernetes provides the infrastructure to manage and orchestrate those containers in a resilient, scalable, and automated way.
 
 
-## **Q2. What is the best practices while creating Docker Image ?** ##
+## **Q2. What are the best practices whil creating docker image ?** ##
 
 ![Docker](images/bestprac.jpg) 
 ### Ans: 

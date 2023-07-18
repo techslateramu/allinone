@@ -48,7 +48,6 @@ Terraform is an infrastructure as code (IaC) tool that allows you to define and 
 - Overall, Terraform is a powerful and flexible IaC tool that allows you to manage your infrastructure across multiple clouds using a declarative language and a resource graph to manage dependencies.
 
 
-
 ## **Q3. What are the advantages of using Terraform for infrastructure management?** ##
 
 ### Ans:
@@ -107,10 +106,6 @@ A Terraform configuration file is written in HashiCorp Configuration Language (H
 - **Module block**: This block is used to reference an external Terraform module, which is a collection of pre-configured resources that can be reused across multiple Terraform configurations. The module block specifies the source of the module and any input variables that need to be passed to the module.
 
 - Overall, a Terraform configuration file consists of one or more provider blocks, resource blocks, and other optional blocks such as variables, output, and module blocks. These blocks are written in HCL syntax and can be organized in a variety of ways to meet the needs of the infrastructure being provisioned.
-
-
-
-
 
 
 ## **Q6. How can you manage multiple environments (e.g., dev, test, prod) using Terraform?** ##

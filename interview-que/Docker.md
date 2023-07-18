@@ -25,7 +25,7 @@
 - In summary, Docker is a tool for creating containers, while Kubernetes is a tool for managing those containers at scale. Docker provides the ability to package and distribute applications in a portable and efficient manner, while Kubernetes provides the infrastructure to manage and orchestrate those containers in a resilient, scalable, and automated way.
 
 
-## **Q2. What is the best practices while creating docker image ?** ##
+## **Q2. What is the best practices while creating Docker Image ?** ##
 
 ![Docker](images/bestprac.jpg) 
 ### Ans: 
@@ -34,7 +34,7 @@ When creating a Docker image, there are a number of best practices that can help
 
 - **Use a small and efficient base image:** Choose a base image that is lightweight and contains only the necessary components for your application. This can help reduce the size of the image and make it more efficient.
 
-- **Minimize the number of layers:** Docker images are built using a series of layers. Each layer adds to the size of the image, so it's best to minimize the number of layers in the image. You can use multi-stage builds to reduce the number of layers.
+- **Minimize the number of layers:** Docker images are builzt using a series of layers. Each layer adds to the size of the image, so it's best to minimize the number of layers in the image. You can use multi-stage builds to reduce the number of layers.
 
 - **Keep the image up-to-date:** Use the latest version of your application, operating system, and other dependencies to ensure that your image is up-to-date and secure.
 
@@ -85,7 +85,7 @@ Yes, Docker and Kubernetes are both container technologies, but they serve diffe
 
 - **Docker** is a containerization platform that allows you to create, package, and distribute containerized applications. Docker allows you to build an image of your application and its dependencies, and then run that image as a container on any machine that has Docker installed. Docker provides a simple and efficient way to run and manage containers on a single machine.
 
-- **Kubernetes**, on the other hand, is a container orchestration platform that allows you to deploy, scale, and manage containerized applications across multiple machines. Kubernetes provides a way to automate the deployment, scaling, and management of containerized applications, making it easy to run and manage applications in a distributed environment.
+- **Kubernetes** on the other hand, is a container orchestration platform that allows you to deploy, scale, and manage containerized applications across multiple machines. Kubernetes provides a way to automate the deployment, scaling, and management of containerized applications, making it easy to run and manage applications in a distributed environment.
 
 In summary, Docker is a tool for creating and running containers on a single machine, while Kubernetes is a tool for managing containers across multiple machines. While it is possible to use Docker without Kubernetes, using Kubernetes allows you to leverage the full power of container orchestration to run and manage your applications at scale.
 

@@ -66,6 +66,19 @@ if (-not $azureCliInstalled) {
     Write-Output " ***************************** Azure CLI is already installed. ***************************** "
 }
 
+# Check if AWS CLI is installed
+$AWSCliInstalled = Get-Command aws -ErrorAction SilentlyContinue
+
+# If Azure CLI is not installed, install it
+if (-not $AWSCliInstalled) {
+    Write-Output " ***************************** Installing AWS CLI... ***************************** "
+    # Install Azure CLI using Chocolatey
+    choco install awscli
+    Write-Output " ***************************** AWS CLI installed. ***************************** "
+} else {
+    Write-Output " ***************************** AWS CLI is already installed. ***************************** "
+}
+
 # Check if DBeaver is installed
 $dbeaverInstalled = Get-Command dbeaver -ErrorAction SilentlyContinue
 

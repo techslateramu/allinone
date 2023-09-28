@@ -55,7 +55,6 @@ Below are the fields that you may need to fill up when opening a work item.
 9. **Efforts, size, and Story points** – Provide the estimate of the work that is required to complete the issue or task.
 
 
-
 ## **Using automation**
 
 

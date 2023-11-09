@@ -6,6 +6,9 @@ app = Flask(__name__)
 def welcome():
     return "Hello World!"
 
+@app.route('/multi/<int:a>/<int:b>')
+def multi(a, b):
+    return str(a * b)
 
 @app.route('/add/<int:a>/<int:b>')
 def add(a, b):

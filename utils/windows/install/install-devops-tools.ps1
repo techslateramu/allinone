@@ -66,6 +66,25 @@ if (-not $azureCliInstalled) {
     Write-Output " ***************************** Azure CLI is already installed. ***************************** "
 }
 
+# Check if Azure PowerShell module is installed.
+if (-not (Get-Module -Name Az -ListAvailable)) {
+    # If not installed, install the Azure PowerShell module.
+    Install-Module -Name Az -Force -AllowClobber
+}
+
+# Import the Azure PowerShell module.
+Import-Module Az
+
+# Check if AWS Tools for PowerShell module is installed
+if (-not (Get-Module -Name AWSPowerShell -ListAvailable)) {
+    # If not installed, install the AWS Tools for PowerShell module.
+    Install-Module -Name AWSPowerShell -Force -AllowClobber
+}
+
+# Import the AWS Tools for PowerShell module.
+Import-Module AWSPowerShell
+
+
 # Check if AWS CLI is installed
 $AWSCliInstalled = Get-Command aws -ErrorAction SilentlyContinue
 

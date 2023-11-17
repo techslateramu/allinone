@@ -1,8 +1,14 @@
 ![TechSlate](../global/images/ts.png)
 
-# To create EC2 Instance, using AWS-CLI, follow below steps :
+# To create AWS EC2 Instance, using AWS-CLI, follow below steps :
 
-- ### Open the command line and first run following command with provided **Access Key ID** and **Secret Access Key** .
+## Pre-Requistes
+
+- ### Make sure to Create a user in your aws console and have Access Key ID and Secret Access Key noted down in notepad.
+
+## Process
+
+- ### Open the command line of your choice and run following command with provided **Access Key ID** and **Secret Access Key** .
 
       aws configure 
 
@@ -51,4 +57,34 @@
     ![EC2 Instance](images/success.png)
 
 
+<hr>
+<br>
 
+# POWERSHELL
+
+ ## PowerShell Pre-requisites
+
+ -      Install-Module -Name AWSPowerShell -Force -AllowClobber
+
+ -      Import-Module AWSPowerShell
+
+ -      Set-AWSCredentials -AccessKey ***************** -SecretKey *************************
+
+
+ ## PowerShell Commands :
+
+ ### Create KeyPair
+
+ -      New-EC2KeyPair -KeyName "MyNewKeyPair" | Out-File -FilePath "MyNewKeyPair.pem"
+
+ ### Create SecurityGroup
+
+ -     New-EC2SecurityGroup -GroupName "MySecurityGroup" -Description "My security group description" -VpcId "vpc-0c22bd2bc19d4feb2"
+
+ ### Create EC2 Instance
+
+ -     New-EC2Instance -ImageId "ami-090fa75af13c156b4" -InstanceType "t2.micro" -KeyName "MyNewKeyPair" -SecurityGroups "sg-0aca48df324da9a5f" -SubnetId "subnet-05d62ad33f32ac507"
+
+ <br>
+
+<hr>

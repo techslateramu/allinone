@@ -142,14 +142,14 @@ S.No| Topic | Link |
 
 |S.No | Topic     | Link        |                                               
 |-----|-----------|-------------|
-|01| Git  | [ Git Interview Questions](interview-que/Git.md) |
-|02| Linux | [ Linux Interview Questions](interview-que/Linux.md) |
-|03| DevOps | [ DevOps Interview Questions](interview-que/DevOps.md) |
-|04| Docker | [ Docker Interview Questions](interview-que/Docker.md) |
-|05| K8S | [ K8S Interview Questions](interview-que/K8s.md) |
-|06| Azure | [ Azure Interview Questions](interview-que/Azure.md) |
-|07| Terraform | [Terraform Interview Questions](interview-que/Terraform.md) |
-|08| Azure DevOps| [Azure DevOps Interview Questions](interview-que/AzureDevOps.md) |
+|01| Git  | [ Git Interview Questions](interview-questions/Git.md) |
+|02| Linux | [ Linux Interview Questions](interview-questions/Linux.md) |
+|03| DevOps | [ DevOps Interview Questions](interview-questions/DevOps.md) |
+|04| Docker | [ Docker Interview Questions](interview-questions/Docker.md) |
+|05| K8S | [ K8S Interview Questions](interview-questions/K8s.md) |
+|06| Azure | [ Azure Interview Questions](interview-questions/Azure.md) |
+|07| Terraform | [Terraform Interview Questions](interview-questions/Terraform.md) |
+|08| Azure DevOps| [Azure DevOps Interview Questions](interview-questions/AzureDevOps.md) |
 
 # ADO-Pipelines concepts covered
 -

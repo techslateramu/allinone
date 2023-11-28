@@ -4,7 +4,8 @@
 
 ## *This page contains all the Best-Practices of Git.*
 
-![Git](images/gitversioncontrol.jpg)
+![git-blog-header](https://github.com/techslateramu/allinone/assets/123730077/64638757-4444-46a1-bf29-62d5dd1ee27a)
+
 
 - Git is a powerful version control system widely used in software development. Here are some best practices to help you use Git effectively and collaboratively:
 

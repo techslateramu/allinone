@@ -120,6 +120,12 @@ S.No| Topic | Link |
 
 
 
+# Default Ports
+
+S.No| Topic | Link |
+|---|---------|-------------|
+|01| Default Ports| [Default Ports](default-ports/README.md) |
+
 # Error-Codes
 
 S.No| Topic | Link |
@@ -131,11 +137,47 @@ S.No| Topic | Link |
 
 |S.No| Topic | Link |
 |----|---------|-------------|
-|01  | Azure Devops Best Prctices| [Creating the perfect Azure DevOps culture for best practice](best-practises/AzureDevOps.md) |
-|02  | Docker Best Prctices | [ Docker Compose-Best Practices ](best-practises/Docker.md) |
-|03  | Kubernetes Best Prctices | [Kubernetes Best Practices](best-practises/kubernetes.md) |
-|04  | Terraform Best Prctices  | [Terraform Best Practices](best-practises/Terraform.md) |
+|01  | Azure Devops Best Practices| [Creating the perfect Azure DevOps culture for best practice](best-practices/AzureDevOps.md) |
+|02  | Docker Best Practices | [ Docker Compose-Best Practices ](best-practices/Docker.md) |
+|03  | Kubernetes Best Practices | [Kubernetes Best Practices](best-practices/kubernetes.md) |
+|04  | Terraform Best Practices  | [Terraform Best Practices](best-practices/Terraform.md) |
+|05  | DevOps Principles  | [DevOps Principles](best-practices/DevOps_Principles.md) |
+|06  | Git Best Practices | [Git Best Practices](best-practices/Git.md) |
+|07  | DevOps Best Practices | [DevOps Best Practices](best-practices/DevOps.md) |
 
+
+# Python
+
+|S.No| Topic | Link |
+|----|---------|-------------|
+|01  | 01-string-reverse| [python script on string-reverse](python/01-string-reverse/README.md) |
+|02  | 02-palindrome_check| [python script on palindrome_check](python/02-palindrome_check/README.md) |
+|03  | 03-fibonacci_series | [python script on fibonacci_series](python/03-fibonacci_series/README.md) |
+|04  | 04-primenumber-check | [python script on primenumber-check](python/04-primenumber-check/README.md) |
+|05  | 05-factorial | [python script on factorial](python/05-factorial/README.md) |
+|06  | 06-sum_of_digits | [python script on sum_of_digits](python/06-sum_of_digits/README.md) |
+|07  | 07-armstrong_number | [python script on armstrong_number](python/07-armstrong_number/README.md) |
+|08  | 08-binary_to_decimal_conversion | [python script on binary_to_decimal_conversion](python/08-binary_to_decimal_conversion/README.md) |
+|09  | 09-bubble-sort | [python script on bubble-sort](python/09-bubble-sort/README.md) |
+|10  | 10-merge_sort | [python script on merge_sort](python/10-merge_sort/README.md) |
+|11  | 11-kubernetes_cluster | [python script on kubernetes_cluster](python/11-kubernetes_cluster/README.md) |
+
+
+# Python with k8s
+
+|S.No| Topic | Link |
+|----|---------|-------------|
+|01  | 01-flask_application| [python script on 01-flask_application](python_with_k8s/01-flask_application) |
+|02  | 02-palindrome_check| [python script on 02-Kubernetes_Pod_health](python/02-Kubernetes_Pod_health/README.md) |
+|03  | 03-fibonacci_series | [python script on fibonacci_series](python/03-fibonacci_series/README.md) |
+|04  | 04-primenumber-check | [python script on primenumber-check](python/04-primenumber-check/README.md) |
+|05  | 05-factorial | [python script on factorial](python/05-factorial/README.md) |
+|06  | 06-sum_of_digits | [python script on sum_of_digits](python/06-sum_of_digits/README.md) |
+|07  | 07-armstrong_number | [python script on armstrong_number](python/07-armstrong_number/README.md) |
+|08  | 08-binary_to_decimal_conversion | [python script on binary_to_decimal_conversion](python/08-binary_to_decimal_conversion/README.md) |
+|09  | 09-bubble-sort | [python script on bubble-sort](python/09-bubble-sort/README.md) |
+|10  | 10-merge_sort | [python script on merge_sort](python/10-merge_sort/README.md) |
+|11  | 11-kubernetes_cluster | [python script on kubernetes_cluster](python/11-kubernetes_cluster/README.md) |
 
 
 # Interview Questions

@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: flask-app
 spec:
-  replicas: 3
+  replicas: 3  # Adjust as needed
   selector:
     matchLabels:
       app: flask-app
@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: flask-app
-        image: your-docker-registry/flask-app:latest
+        image: your-container-registry/your-flask-app:latest  # Replace with your container registry details
         ports:
         - containerPort: 5000

@@ -194,9 +194,14 @@ S.No| Topic | Link |
 |08| Azure DevOps| [Azure DevOps Interview Questions](interview-questions/AzureDevOps.md) |
 
 # ADO-Pipelines concepts covered
--
--
--
--
--
 
+|S.No | Topic     | Link        |                                               
+|-----|-----------|-------------|
+|01| Day 1 | [ ADO - 6.1.3a - DEMO - Pipelines](ado-pipelines/README.md) |
+|02| Day 2 | [ ADO - 6.2.2 - TF  - ACI - Calc](ado-pipelines/README.md) |
+|03| Day 2 | [ ADO - 6.2.3 - TF - ACI - Color](ado-pipelines/README.md) |
+|04| Day 2 | [ ADO - 6.2.4 - TF-Infra-WebApp](ado-pipelines/README.md) |
+|05| Day 3 | [ADO - 6.3.1a - Dotnet-WebApp-LocalRun](ado-pipelines/README.md) |
+|06| Day 3 | [ADO - 6.3.1b - Dotnet-WebApp-Pipeline](ado-pipelines/README.md) |
+|07| Day 4 | [ADO - 6.4.1 - Tempaltes & Env Management](ado-pipelines/README.md) |
+|08| Day 4 | [ADO - 6.4.3 - Jenkins Infra & Pipelines](ado-pipelines/README.md) |

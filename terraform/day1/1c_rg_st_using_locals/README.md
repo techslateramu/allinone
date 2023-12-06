@@ -49,6 +49,9 @@ export ARM_CLIENT_SECRET="VALUE_OF_CLIENT_SECRET"
 
 ## `main.tf`
 ```
+provider "azurerm" {
+  features {}
+}
 # Create resource group
 resource "azurerm_resource_group" "main" {
   name     = var.resource_group_name
@@ -88,6 +91,12 @@ variable "storage_account_name" {
   default     = "examplestorageaccount"
 }
 
+variable "index" {
+  type        = number
+  description = "A unique index to differentiate between multiple instances of the same application."
+  default     = 1
+}
+
 variable "account_tier" {
   type        = string
   description = "The tier of the storage account. For example, 'Standard'."
@@ -108,7 +117,7 @@ variable "account_replication_type" {
 locals {
   org_name = "ts"  
   resource_group_name = "${local.org_name}-rg-${var.location}-${var.app_name}-${var.environment}-${format("%02d", var.index)}"
-  storage_account_name = "${local.org_name}-st-${var.app_name}${var.environment}${format("%02d", var.index)}"
+  storage_account_name = "${local.org_name}st${var.app_name}${var.environment}${format("%02d", var.index)}"
 }
 
 ```
@@ -144,7 +153,9 @@ terraform plan
 ```
 terraform apply
 ```
+![Visual studio page](images/apply.png)
 
+- ### Lets check the Portal.
 
-
+![Visual studio page](images/portal.png)
 

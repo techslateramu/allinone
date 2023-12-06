@@ -51,6 +51,9 @@ export ARM_CLIENT_SECRET="VALUE_OF_CLIENT_SECRET"
 
 ## `rg_st_main.tf`
 ```
+provider "azurerm" {
+  features {}
+}
 # Create resource group
 resource "azurerm_resource_group" "main" {
   name     = var.resource_group_name
@@ -132,7 +135,9 @@ terraform plan
 ```
 terraform apply
 ```
+![Visual studio page](images/apply.png)
 
+- ### Lets check the portal
 
-
+![Visual studio page](images/portal.png)
 

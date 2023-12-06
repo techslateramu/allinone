@@ -48,15 +48,18 @@ export ARM_CLIENT_SECRET="VALUE_OF_CLIENT_SECRET"
 
 ## `main.tf`
 ```
+provider "azurerm" {
+  features {}
+}
 # Create resource group
 resource "azurerm_resource_group" "main" {
-  name     = var.resource_group_name
+  name     = local.resource_group_name
   location = var.location
 }
 
 # Create storage account
 resource "azurerm_storage_account" "main" {
-  name                     = var.storage_account_name
+  name                     = local.storage_account_name
   resource_group_name      = azurerm_resource_group.main.name
   location                 = var.location
   account_tier             = var.account_tier
@@ -107,7 +110,7 @@ variable "account_replication_type" {
 locals {
   org_name = "ts"  
   resource_group_name = "${local.org_name}-rg-${var.location}-${var.app_name}-${var.environment}-${format("%02d", var.index)}"
-  storage_account_name = "${local.org_name}-st-${var.app_name}${var.environment}${format("%02d", var.index)}"
+  storage_account_name = "${local.org_name}st${var.app_name}${var.environment}${format("%02d", var.index)}"
 }
 
 ```
@@ -127,6 +130,7 @@ output "storage_account_name" {
 
 output "storage_account_connection_string" {
   value = azurerm_storage_account.main.primary_connection_string
+  sensitive = true
 }
 ```
 
@@ -139,25 +143,31 @@ output "storage_account_connection_string" {
 ```
 terraform init
 ``` 
+![Visual studio page](images/init.png)
 
 - ### Validate
 
 ```
 terraform validate
 ```
+![Visual studio page](images/validate.png)
 
 - ### Plan
 
 ```
 terraform plan
 ```
+![Visual studio page](images/plan.png)
 
 - ### Apply
 
 ```
 terraform apply
 ```
+![Visual studio page](images/apply.png)
 
+- ### Lets check the portal , we can see that resources got created.
 
+![Visual studio page](images/portal.png)
 
 

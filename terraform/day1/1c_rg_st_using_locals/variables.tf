@@ -22,3 +22,16 @@ variable "index" {
   description = "A unique index to differentiate between multiple instances of the same application."
   default     = 1
 }
+
+variable "account_replication_type" {
+  type        = string
+  description = "The replication type of the storage account. For example, 'LRS'."
+  default     = "LRS"
+}
+
+variable "account_tier" {
+  type        = string
+  description = "The tier of the storage account. For example, 'Standard'."
+  default     = "Standard"
+}
+

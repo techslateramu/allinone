@@ -6,10 +6,10 @@
 
 This Terraform script create AWS S3 Bucket. Amazon Simple Storage Service (Amazon S3) is a scalable object storage service provided by Amazon Web Services (AWS). It is designed to store and retrieve any amount of data from anywhere on the web. S3 is a fundamental building block of cloud computing and is widely used for various purposes, including data storage, backup and recovery, website hosting, and big data analytics.
 
-## prerequisites
+## Pre-Requisites
 
-- create an AWS account (link)
-- create a IAM user and create access keys (link)
+- Create an AWS account (link)
+- Create a IAM user and create access keys (link)
 - If you haven't installed Terraform, download and install it from the official Terraform website.
 - Install AWS CLI
 

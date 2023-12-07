@@ -12,7 +12,7 @@
 
       aws configure 
 
-    ![EC2 Instance](images/aws-configure.png)
+    ![EC2 Instance](images/aws-conf.png)
 
 - ### Create a role with required policies attached to it 
       aws iam create-role \

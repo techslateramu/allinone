@@ -1,5 +1,11 @@
 ![TechSlate](../../global/images/ts.png)
 
+#  Introduction
+
+- What is ``Amazon S3Bucket`` ?
+
+    Amazon Simple Storage Service (Amazon S3) is an object storage service that offers industry-leading scalability, data availability, security, and performance. Customers of all sizes and industries can use Amazon S3 to store and protect any amount of data for a range of use cases, such as data lakes, websites, mobile applications, backup and restore, archive, enterprise applications, IoT devices, and big data analytics.
+
 # To create AWS S3 Bucket, using ```AWS Console``` , ```AWS-CLI``` and  ```Powershell``` follow below steps :
 
 ## Pre-Requistes
@@ -184,7 +190,9 @@
 
     ![EC2 Instance](../images/ps-html.png)
 
-- ### We need to add the policy which is already added under S3Bucket Folder.
+- ### We need to add the policy which is already added under S3Bucket Folder just change the s3bucket name to ```s3bucket-ps-demo```.
+
+    ![EC2 Instance](../images/ps-policy.json.png)
 
 - ### Lets just Apply the bucket policy:
 

@@ -21,6 +21,7 @@
 | 10       |      Python            |
 | 11       |      Terraform         |
 | 12       |      Utils             |
+| 13       |      Terraform-with-aws|
 
 
 
@@ -205,3 +206,9 @@ S.No| Topic | Link |
 |06| Day 3 | [ADO - 6.3.1b - Dotnet-WebApp-Pipeline](ado-pipelines/README.md) |
 |07| Day 4 | [ADO - 6.4.1 - Tempaltes & Env Management](ado-pipelines/README.md) |
 |08| Day 4 | [ADO - 6.4.3 - Jenkins Infra & Pipelines](ado-pipelines/README.md) |
+
+# Terraform-with-aws topics covered
+
+|S.No | Topic     | Link        |                                               
+|-----|-----------|-------------|
+|DAY1| Create AWS S3 Bucket|[Terraform Script: Create AWS S3 Bucket](terraform-with-aws/day1/1a_s3/README.md) |

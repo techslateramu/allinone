@@ -130,7 +130,7 @@ terraform apply
 - ## Now , you can go back to your portal and see if your S3 is created.
 
 
-![aws9](https://github.com/techslateramu/allinone/assets/123730077/bb6cde3d-75d9-44b4-a8e5-de6c1af70dc4)
+![aws9](https://github.com/techslateramu/allinone/assets/123730077/b4c55e46-b29c-4758-adae-09c8508b965e)
 
 
 

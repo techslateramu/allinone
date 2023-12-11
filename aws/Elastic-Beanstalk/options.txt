@@ -1,0 +1,8 @@
+[
+    {
+        "Namespace": "aws:autoscaling:launchconfiguration",
+        "OptionName": "IamInstanceProfile",
+        "Value": "ebs-role21"
+    }
+    
+]

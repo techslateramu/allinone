@@ -1,0 +1,15 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": "iam:CreateRole",
+      "Resource": "arn:aws:iam::945797188421:role/MyElasticBeanstalkRole"
+    },
+    {
+      "Effect": "Allow",
+      "Action": "iam:PutUserPolicy",
+      "Resource": "arn:aws:iam::945797188421:role/MyElasticBeanstalkRole"
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 
 #  Introduction
 
-- What is ```Aws Elastic Container Service``` ?
+- What is ```Amazon Elastic Container Service (Amazon ECS) ```?
 
     Amazon Elastic Container Service (Amazon ECS) is a highly scalable and fast container management service that makes it easy to run, stop, and manage containers on a cluster.
 
@@ -92,5 +92,65 @@
 <br>
 <hr>
 
+# **AWS-CLI**
+- ### Open the command line of your choice and run following command with provided **Access Key ID** and **Secret Access Key** .
 
+      aws configure 
+
+    ![EC2 Instance](../images/aws-conf.png)
+
+- ### Add the necessary ECS permissions as an inline policy. For the ecs:CreateCluster action, you can add the following policy to the User.
+         {
+            "Effect": "Allow",
+            "Action": "ecs:CreateCluster",
+            "Resource": "*"
+         }
+
+- ### Create an ECS Cluster by running the following command .
+
+      aws ecs create-cluster --cluster-name your-cluster-name
+
+    ![EC2 Instance](../images/cli-cluster.png)
+
+- ### Before you can run a service, you need to define a task. A task definition describes how a Docker container should be launched, including the Docker image, CPU and memory requirements, etc.Run the following command :
+  
+- ### Add the necessary ECS permissions to the policy. For the ecs:RegisterTaskDefinition action, you can add the following statement to the policy:
+       {
+         "Effect": "Allow",
+         "Action": "ecs:RegisterTaskDefinition",
+         "Resource": "*"
+       }
+
+* ### Run the following command
+
+        aws ecs register-task-definition --family tech-cli-task  --container-definitions '[{"name":"techslate-cli","image":"public.ecr.aws/nginx/nginx:mainline-alpine","memory":512}]'
+
+    ![EC2 Instance](../images/cli-task.png)
+
+- ### Once you have a cluster and a task definition, you can run a service:
+
+- ### Add the necessary ECS permissions to the policy. For the ecs:CreateService action, you can add the following statement to the policy:
+
+      {
+        "Effect": "Allow",
+        "Action": "ecs:CreateService",
+        "Resource": "arn:aws:ecs:us-east-1:945797188421:service/techslate-cli/tech-cli-service"
+      }
+
+- ### Run the following command to create ``Service`` .
+
+      aws ecs create-service --cluster techslate-cli --service-name tech-cli-service --task-definition tech-cli-task --desired-count 1
+
+    ![EC2 Instance](../images/cli-service.png)
+
+
+- ### Create a task set in a service that uses an external deployment controller. Before we create Tasks under service , lets add a policy to the user which is mentioned below :
+
+      {
+        "Effect": "Allow",
+        "Action": "ecs:CreateTaskSet",
+        "Resource": "*"
+      }
+
+- ### Run the following command to create ``Tasks`` under Service .
 

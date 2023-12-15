@@ -6,6 +6,37 @@
 
     Amazon Elastic Container Service (Amazon ECS) is a highly scalable and fast container management service that makes it easy to run, stop, and manage containers on a cluster.
 
+# Amazon ECS vs Amazon EKS Comparison
+
+| Criteria                                  | Amazon ECS                                       | Amazon EKS                                       |
+|-------------------------------------------|--------------------------------------------------|--------------------------------------------------|
+| **Ease of Use**                           | - Simpler to set up and manage.                  | - More complex due to Kubernetes orchestration.   |
+|                                           | - Well-integrated with other AWS services.      | - Provides a more standard Kubernetes interface. |
+| **Service Types**                         | - Supports both containers and serverless tasks.| - Primarily designed for container orchestration. |
+|                                           |                                                  | - Better suited for microservices architectures. |
+| **Scaling**                               | - Supports auto-scaling of container instances. | - Auto-scaling is inherent in Kubernetes.         |
+|                                           |                                                  | - More granular control over scaling behavior.   |
+| **Orchestration**                         | - Proprietary orchestration engine.              | - Native Kubernetes orchestration.               |
+|                                           |                                                  | - Industry-standard, widely adopted orchestration.|
+| **Ecosystem Integration**                 | - Tightly integrated with AWS services.         | - Can integrate with non-AWS services as well.   |
+|                                           |                                                  | - Broader ecosystem due to Kubernetes adoption.  |
+| **Cost**                                  | - May have lower costs for smaller workloads.    | - Potential higher costs due to Kubernetes complexity.|
+|                                           | - Pay per task and per vCPU/RAM for EC2 instances.| - Pay for Kubernetes clusters and worker nodes.|
+| **Community Support**                    | - ECS has a growing community but smaller than Kubernetes.| - Large and active Kubernetes community.      |
+|                                           |                                                  | - Access to a wide range of third-party tools.   |
+| **Control and Customization**             | - Less flexibility and customization compared to Kubernetes. | - Highly customizable due to Kubernetes features.|
+|                                           | - Limited control over the underlying infrastructure. | - More control over the cluster configuration.   |
+| **Security**                              | - Built-in AWS IAM roles for task execution.    | - Fine-grained RBAC controls in Kubernetes.     |
+|                                           | - AWS VPC integration for network isolation.   | - Pod security policies for additional control. |
+| **Updates and Maintenance**               | - AWS manages the underlying infrastructure.    | - More control but also responsibility for updates.|
+|                                           | - Easy to update ECS agents and launch types.  | - Kubernetes updates need to be managed manually.|
+| **Use Cases**                            | - Well-suited for simpler, single-container applications. | - Ideal for complex, multi-container and microservices apps.|
+|                                           | - Quick deployment of containerized tasks.     | - Best for applications requiring high scalability.|
+
+Keep in mind that the choice between ECS and EKS depends on various factors, including your team's familiarity with Kubernetes, the complexity of your applications, and your specific requirements.
+
+
+
 
 ## To create ``AWS ECS``, using ```AWS Console``` , ```AWS-CLI``` and  ```Powershell``` follow below steps :
 

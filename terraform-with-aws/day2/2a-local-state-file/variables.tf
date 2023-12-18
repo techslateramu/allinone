@@ -1,10 +1,3 @@
-locals {
-  org_name             = "ts"  
- bucket_name = "${local.org_name}-s3-${var.s3_prefix}-${var.env}-${var.bnst_prefix}"
- beanstalk_name = "${local.org_name}-bnst_123-${var.s3_prefix}-${var.env}-${var.bnst_prefix}"
-}
-
-
 
 variable "env" {
   type        = string
@@ -22,3 +15,28 @@ variable "bnst_prefix" {
   default = "4233"
 }
 
+variable "force_destroy" {
+  description = "Destroy all objects in the S3 bucket when the bucket is destroyed"
+  type        = bool
+  default     = true
+}
+
+variable  "block_public_acls" {
+  type        = bool
+  default     = true
+}
+
+variable  "block_public_policy" {
+  type        = bool
+  default     = true
+}
+
+variable  "ignore_public_acls" {
+  type        = bool
+  default     = true
+}
+
+variable  "restrict_public_buckets" {
+  type        = bool
+  default     = true
+}

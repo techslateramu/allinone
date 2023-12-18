@@ -1,18 +1,18 @@
 resource "aws_s3_bucket" "bucket" {
   bucket        = local.bucket_name
-  force_destroy = true
+  force_destroy = var.force_destroy
 }
 
 resource "aws_s3_bucket_public_access_block" "bucket" {
   bucket = aws_s3_bucket.bucket.id
 
-  block_public_acls       = true
-  block_public_policy     = true
-  ignore_public_acls      = true
-  restrict_public_buckets = true
+  block_public_acls       = var.block_public_acls
+  block_public_policy     = var.block_public_policy
+  ignore_public_acls      = var.ignore_public_acls
+  restrict_public_buckets = var.restrict_public_buckets
 }
 resource "aws_iam_role" "hello_lambda_exec" {
-  name = "hello-lambda"
+  name = local.lambda_name
 
   assume_role_policy = <<POLICY
 {
@@ -36,7 +36,7 @@ resource "aws_iam_role_policy_attachment" "hello_lambda_policy" {
 }
 
 resource "aws_lambda_function" "hello" {
-  function_name = "hello"
+  function_name = local.function_name
 
   s3_bucket = aws_s3_bucket.bucket.id
   s3_key    = aws_s3_object.lambda_hello.key

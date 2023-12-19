@@ -43,16 +43,7 @@ resource "aws_lambda_function" "hello" {
 
   runtime = "nodejs16.x"
   handler = "function.handler"
-
-  source_code_hash = data.archive_file.lambda_hello.output_base64sha256
-
   role = aws_iam_role.hello_lambda_exec.arn
-}
-
-resource "aws_cloudwatch_log_group" "hello" {
-  name = "/aws/lambda/${aws_lambda_function.hello.function_name}"
-
-  retention_in_days = 14
 }
 
 data "archive_file" "lambda_hello" {
@@ -75,4 +66,43 @@ resource "aws_elastic_beanstalk_application" "tftest" {
   name        = local.beanstalk_name
   description = "Short description of the Environment"
 }
+
+resource "aws_elastic_beanstalk_environment" "tftest" {
+  name                = local.environment_name
+  application        = aws_elastic_beanstalk_application.tftest.name
+  solution_stack_name = "64bit Amazon Linux 2023 v4.0.6 running Python 3.11"
+
+  setting {
+    namespace = "aws:autoscaling:launchconfiguration"
+    name      = "IamInstanceProfile"
+    value     = aws_iam_instance_profile.eb_instance_profile.name
+  
+}
+}
+
+resource "aws_iam_role" "eb_instance_role" {
+  name = "eb-instance-role"
+
+  assume_role_policy = jsonencode({
+    Version = "2012-10-17",
+    Statement = [
+      {
+        Action = "sts:AssumeRole",
+        Effect = "Allow",
+        Principal = {
+          Service = "ec2.amazonaws.com"
+        }
+      }
+    ]
+  })
+}
+
+resource "aws_iam_instance_profile" "eb_instance_profile" {
+  name = "eb-instance-profile"
+
+  role = aws_iam_role.eb_instance_role.name  
+}
+
+ 
+  
 

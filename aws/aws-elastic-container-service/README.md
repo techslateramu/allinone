@@ -40,6 +40,12 @@ Keep in mind that the choice between ECS and EKS depends on various factors, inc
 
 ## To create ``AWS ECS``, using ```AWS Console``` , ```AWS-CLI``` and  ```Powershell``` follow below steps :
 
+1.[AWS Console](#aws-console)
+
+2.[AWS-CLI](#aws-cli)
+
+3.[Powershell](#powershell)
+
 ## Pre-Requistes
 
 - ### Make sure to Create a user in your aws console and have ```Access Key ID``` and ```Secret Access Key``` noted down in notepad.
@@ -185,3 +191,7 @@ Keep in mind that the choice between ECS and EKS depends on various factors, inc
 
 - ### Run the following command to create ``Tasks`` under Service .
 
+
+
+
+# **Powershell**

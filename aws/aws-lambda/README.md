@@ -9,6 +9,12 @@
 
 ## To create ``AWS Lambda``, using ```AWS Console``` , ```AWS-CLI``` and  ```Powershell``` follow below steps :
 
+1.[AWS Console](#aws-console)
+
+2.[AWS-CLI](#aws-cli)
+
+3.[Powershell](#powershell)
+
 ## Pre-Requistes
 
 - ### Make sure to Create a user in your aws console and have ```Access Key ID``` and ```Secret Access Key``` noted down in notepad.

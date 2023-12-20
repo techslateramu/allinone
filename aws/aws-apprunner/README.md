@@ -9,6 +9,12 @@
 
 ## To create ``AWS App Runner``, using ```AWS Console``` , ```AWS-CLI``` and  ```Powershell``` follow below steps :
 
+1.[AWS Console](#aws-console)
+
+2.[AWS-CLI](#aws-cli)
+
+3.[Powershell](#powershell)
+
 ## Pre-Requistes
 
 - ### Make sure to Create a user in your aws console and have ```Access Key ID``` and ```Secret Access Key``` noted down in notepad.
@@ -23,7 +29,7 @@
 
 # **AWS-Console**
 
-- ### **Open the AWS-Console and search for ``AWS App Runner`` in the console . Click on ```Create Service```.
+- ### **Open the AWS-Console and search for ``AWS App Runner`` in the console . Click on ```Create Service```**.
 
   ![EC2 Instance](../images/cre-serv.png)
 
@@ -99,5 +105,13 @@
 - ### **Here it is , we can ```Hello-World !``` appearing on the page**
 
   ![EC2 Instance](../images/hello-world.png)
+
+
+# **AWS-Cli**
+
+
+
+
+# **powershell**
 
 ***

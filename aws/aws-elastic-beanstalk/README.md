@@ -9,6 +9,12 @@
 
 ## To create ``Amazon Elastic Beanstalk``, using ```AWS Console``` , ```AWS-CLI``` and  ```Powershell``` follow below steps :
 
+1.[AWS Console](#aws-console)
+
+2.[AWS-CLI](#aws-cli)
+
+3.[Powershell](#powershell)
+
 ## Pre-Requistes
 
 - ### Make sure to Create a user in your aws console and have ```Access Key ID``` and ```Secret Access Key``` noted down in notepad.
@@ -159,3 +165,6 @@
        aws elasticbeanstalk create-environment   --application-name MyEBApp   --environment-name MyEBEnvironment   --solution-stack-name "64bit Amazon Linux 2018.03 v2.9.11 running PHP 5.4"
 
    ![EC2 Instance](../images/cli-ebs-env.png)
+
+
+# **POWERSHELL**

@@ -212,6 +212,8 @@ S.No| Topic | Link |
 |S.No | Topic     | Link        |                                               
 |-----|-----------|-------------|
 |DAY1| Create AWS S3 Bucket|[Terraform Script: Create AWS S3 Bucket](terraform-with-aws/day1/1a_s3/README.md) |
-|DAY1| Create Azure S3 Bucket using Variables| [Terraform Script: Create S3 Bucket using Variables](terraform--with-aws/day1/1b_s3_using_vars/README.md) |
-|DAY1 | Create S3 Bucket using locals | [Terraform Script: Create S3 Bucket using locals](terraform/day1/1c_s3_using_locals/README.md) |
-|DAY1| Create S3 Bucket using Outputs | [Terraform Script: Create S3 Bucket using Outputs](terraform/day1/1d_s3_using_outputs/README.md) |
+|DAY1| Create Azure S3 Bucket using Variables| [Terraform Script: Create S3 Bucket using Variables](terraform-with-aws/day1/1b_s3_using_vars/README.md) |
+|DAY1 | Create S3 Bucket using locals | [Terraform Script: Create S3 Bucket using locals](terraform-with-aws/day1/1c_s3_using_locals/README.md) |
+|DAY1| Create S3 Bucket using Outputs | [Terraform Script: Create S3 Bucket using Outputs](terraform-with-aws/day1/1d_s3_using_outputs/README.md) |
+|DAY2| Create AWS S3 Bucket,lambda,beanstalk using localsatate | [Terraform Script: Create AWS S3 Bucket,lambda,beanstalk using localsatate](/terraform-with-aws/day2/2a-local-state-file/README.md) |
+|DAY2| Create AWS S3 Bucket,lambda,beanstalk using Remotesatate | [Terraform Script: Create AWS S3 Bucket,lambda,beanstalk using Remotesatate](terraform-with-aws/day2/2b-remote-state/README.md) |

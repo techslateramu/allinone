@@ -38,4 +38,4 @@ This page contains the links of all sub sections of day1 Terraform .
 |DAY1| 1a_rg_st|[Creating Azure Resource Group and Storage Account](1a_rg_st/README.md) |
 |DAY1| 1b_rg_st_using_vars|[Creating Azure Resource Group and Storage Account using Variables](1b_rg_st_using_vars/README.md) |
 |DAY1 | 1c_rg_st_using_locals|[Creating Azure Resource Group and Storage Account using locals](1c_rg_st_using_locals/README.md) |
-|DAY1| 1d_rg_st_using_outputs|[Creating Azure Resource Group and Storage Account using Outputs] (1d_rg_st_using_outputs/README.md) |
+|DAY1| 1d_rg_st_using_outputs|[Creating Azure Resource Group and Storage Account using Outputs](1d_rg_st_using_outputs/README.md) |

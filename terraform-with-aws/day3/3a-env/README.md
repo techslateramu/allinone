@@ -304,51 +304,51 @@ terraform {
 
 | Step    | command | Image |
 |---------|-------------|-------|
-| **Initialize**  | ``terraform init --var-file=./env/dev.tfvars`` |  ![Step ](images/initd.png) |
-| **validate**   | ``terraform validate`` | ![Step ](images/validd.png) |
-| **plan**  | ``terraform plan --var-file=./env/dev.tfvars`` |  ![Step ](images/pland.png) |
-| **apply**  | ``terraform apply --var-file=./env/dev.tfvars`` |  ![Step ](images/applyd.png) |
+| **Initialize**  | ``terraform init --var-file=./env/dev.tfvars`` |  ![Step ](./images/initd.png) |
+| **validate**   | ``terraform validate`` | ![Step ](./images/validd.png) |
+| **plan**  | ``terraform plan --var-file=./env/dev.tfvars`` |  ![Step ](./images/pland.png) |
+| **apply**  | ``terraform apply --var-file=./env/dev.tfvars`` |  ![Step ](./images/applyd.png) |
 
 ## we shall have a look how resources look in the console.
 
 | ENV    | resource | Image |
 |---------|-------------|-------|
-| **dev** | ``s3``    |  ![Step ](images/s3d.png) |
-| **dev** | ``lambda`` |   ![Step ](images/lbd.png) |
-| **dev** | ``dynamodb``|    ![Step ](images/dyd.png) |  
+| **dev** | ``s3``    |  ![Step ](./images/s3d.png) |
+| **dev** | ``lambda`` |   ![Step ](./images/lbd.png) |
+| **dev** | ``dynamodb``|    ![Step ](./images/dyd.png) |  
 
 
 ## If you want to run the resources in ``prod`` Environment you can execute following steps with specfied environment path.
 
 | Step    | command | Image |
 |---------|-------------|-------|
-| **Initialize**  | ``terraform init --var-file=./env/prod.tfvars`` |  ![Step ](images/initp.png) |
-| **validate**   | ``terraform validate`` | ![Step ](images/validp.png) |
-| **plan**  | ``terraform plan --var-file=./env/prod.tfvars`` |  ![Step ](images/planp.png) |
-| **apply**  | ``terraform apply --var-file=./env/prod.tfvars`` |  ![Step ](images/applyp.png) |
+| **Initialize**  | ``terraform init --var-file=./env/prod.tfvars`` |  ![Step ](./images/initp.png) |
+| **validate**   | ``terraform validate`` | ![Step ](./images/validp.png) |
+| **plan**  | ``terraform plan --var-file=./env/prod.tfvars`` |  ![Step ](./images/planp.png) |
+| **apply**  | ``terraform apply --var-file=./env/prod.tfvars`` |  ![Step ](./images/applyp.png) |
 
 ## we shall have a look how resources look in the console.
 
 | ENV    | resource | Image |
 |---------|-------------|-------|
-| **prod** | ``s3``    |  ![Step ](images/s3p.png) |
-| **prod** | ``lambda`` |   ![Step ](images/lbp.png) |
-| **prod** | ``dynamodb``|    ![Step ](images/dyp.png) |  
+| **prod** | ``s3``    |  ![Step ](./images/s3p.png) |
+| **prod** | ``lambda`` |   ![Step ](./images/lbp.png) |
+| **prod** | ``dynamodb``|    ![Step ](./images/dyp.png) |  
 
 ## If you want to run the resources in ``qa`` Environment you can execute following steps with specfied environment path.
 
 | Step    | command | Image |
 |---------|-------------|-------|
-| **Initialize**  | ``terraform init --var-file=./env/qa.tfvars`` |  ![Step ](images/initq.png) |
-| **validate**   | ``terraform validate`` | ![Step](images/validq.png) |
-| **plan**  | ``terraform plan --var-file=./env/qa.tfvars`` |  ![Step ](images/planq.png) |
-| **apply**  | ``terraform apply --var-file=./env/qa.tfvars`` |  ![Step ](images/applyq.png) |
+| **Initialize**  | ``terraform init --var-file=./env/qa.tfvars`` |  ![Step ](./images/initq.png) |
+| **validate**   | ``terraform validate`` | ![Step](./images/validq.png) |
+| **plan**  | ``terraform plan --var-file=./env/qa.tfvars`` |  ![Step ](./images/planq.png) |
+| **apply**  | ``terraform apply --var-file=./env/qa.tfvars`` |  ![Step ](./images/applyq.png) |
 
 ## we shall have a look how resources look in the console.
 
 | ENV    | resource | Image |
 |---------|-------------|-------|
-| **qa** | ``s3``    |  ![Step ](images/s3q.png) |
-| **qa** | ``lambda`` |   ![Step ](images/lbq.png) |
-| **qa** | ``dynamodb``|    ![Step ](images/dyq.png) |  
+| **qa** | ``s3``    |  ![Step ](./images/s3q.png) |
+| **qa** | ``lambda`` |   ![Step ](./images/lbq.png) |
+| **qa** | ``dynamodb``|    ![Step ](./images/dyq.png) |  
 

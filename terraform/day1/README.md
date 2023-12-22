@@ -1,4 +1,4 @@
-![TechSlate](../global/images/ts.png)
+![TechSlate](../../global/images/ts.png)
 
 # Introduction 
 
@@ -12,11 +12,11 @@ This page contains the links of all sub sections of day1 Terraform .
 
 ## What is Resource Group?
 
-- A resource group is a logical container used in cloud computing environments to organize and manage related resources. It is a fundamental concept in cloud platforms such as Microsoft Azure, Amazon Web Services (AWS), and Google Cloud Platform (GCP). The purpose of a resource group is to simplify the management and organization of resources that belong to a specific application, project, or workload.
+- An Azure Resource Group is a logical container for resources deployed on the Microsoft Azure cloud platform. It acts as a way to manage and organize related Azure resources. Resources within a resource group can include virtual machines, storage accounts, virtual networks, web apps, databases, and more.
 
 ## What is Storage Account?
 
-- A storage account is a fundamental construct in cloud computing platforms like Microsoft Azure, Amazon Web Services (AWS), and Google Cloud Platform (GCP). It serves as a logical container for storing and managing various types of data, including blobs, files, queues, tables, and disks. Each cloud provider may have slight variations in the types of storage services offered, but the concept of a storage account remains consistent.
+- An Azure Storage account is a Microsoft Azure service that provides highly scalable and secure cloud storage for various types of data. It serves as a central place to store and manage different types of data such as blobs, files, queues, tables, and disks. Azure Storage is a fundamental building block for many cloud-based applications and services.
 
 ## What is variables.tf file?
 
@@ -24,11 +24,14 @@ This page contains the links of all sub sections of day1 Terraform .
 
 ## What is locals.tf file?
 
-- The use of locals.tf helps to keep your main configuration cleaner and more focused on resource definitions, while complex expressions or computations are encapsulated in the locals block. It also enhances code maintainability by allowing you to make changes in one place (the locals.tf file) rather than scattered throughout the main configuration.
+- locals.tf is a Terraform configuration file where you define local values or variables to simplify and centralize expressions used in your Terraform code. This file helps improve readability, maintainability, and reduces redundancy by providing a single place to manage and update common values or calculations used across your infrastructure-as-code project.
 
 ## What is outputs.tf file?
 
 - In Terraform, an outputs.tf file is used to define output values that are exposed to users or other Terraform configurations when they consume your module. Outputs provide a way to share information about the infrastructure you've deployed, making it accessible to other parts of your Terraform code or to external systems.
+
+
+ ![Terraform](images/assets.png)
 
 
 # Details and Links of the Sections 

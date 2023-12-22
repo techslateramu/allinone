@@ -18,17 +18,17 @@ This page contains the links of all sub sections of day1 Terraform .
 
 - An Azure Storage account is a Microsoft Azure service that provides highly scalable and secure cloud storage for various types of data. It serves as a central place to store and manage different types of data such as blobs, files, queues, tables, and disks. Azure Storage is a fundamental building block for many cloud-based applications and services.
 
-## What is variables.tf file?
+## What are variables in Terraform?
 
 - The variables.tf file is used to declare and define variables that will be used in your Terraform configuration files (typically with a .tf extension). These variables can represent values that may change between environments, configuration settings, or any other dynamic input.
 
-## What is locals.tf file?
+## What are locals in Terraform?
 
 - locals.tf is a Terraform configuration file where you define local values or variables to simplify and centralize expressions used in your Terraform code. This file helps improve readability, maintainability, and reduces redundancy by providing a single place to manage and update common values or calculations used across your infrastructure-as-code project.
 
-## What is outputs.tf file?
+## What are outputs in Terraform?
 
-- In Terraform, an outputs.tf file is used to define output values that are exposed to users or other Terraform configurations when they consume your module. Outputs provide a way to share information about the infrastructure you've deployed, making it accessible to other parts of your Terraform code or to external systems.
+- In terraform outputs are used to define output values that are exposed to users or other Terraform configurations when they consume your module. Outputs provide a way to share information about the infrastructure you've deployed, making it accessible to other parts of your Terraform code or to external systems.
 
 
  ![Terraform](images/assets.png)

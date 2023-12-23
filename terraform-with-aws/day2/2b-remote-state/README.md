@@ -20,10 +20,14 @@
 
 # <span style="color: lightpink;">Pre-requisites
 
-- **An active AWS account.**
-- **AWS CLI and Terraform installed on your machine.**
-- **AWS IAM user with the necessary permissions and access key credentials.**
-- **Run ``aws configure``** and give the respective ``Access Key`` and ``Secret Key`` .
+[Create an AWS account](../../../aws/aws-account-creation/README.md)
+
+[Create a IAM user and create access keys](../../../aws/aws-user-creation/README.md)
+
+
+**AWS CLI and Terraform installed on your machine.**
+
+**Run ``aws configure``** and give the respective ``Access Key`` and ``Secret Key`` 
 
 # <span style="color: lightpink;"> Getting Started
 

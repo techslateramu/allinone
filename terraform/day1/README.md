@@ -2,7 +2,7 @@
 
 # Introduction 
 
-This is the home page containing all the links of day1 terraform.  .
+This page contains the links of all the exercises of day1 Terraform in Azure .
 
 ## What is Terraform?
 
@@ -31,7 +31,7 @@ This is the home page containing all the links of day1 terraform.  .
 - outputs in terraform are used to define output values that are exposed to users or other Terraform configurations when they consume your module. Outputs provide a way to share information about the infrastructure you've deployed, making it accessible to other parts of your Terraform code or to external systems.
 
 
-     ![Terraform](images/assets.png)
+     ![Terraform](../images/assets.png)
 
 
 # Details and Links of the Sections 

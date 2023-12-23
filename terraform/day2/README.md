@@ -16,9 +16,16 @@ This is the home page containing local state file and remote state file links of
 
 - Azure Service Bus is a cloud messaging service provided by Microsoft Azure, which is a part of the Azure messaging services suite. It enables communication between distributed applications and services. Azure Service Bus supports both asynchronous messaging and event-driven architectures, making it a reliable choice for decoupling different components of an application.
 
+## What is local state file in Terraform?
+
+- A local state file in Terraform, refers to the file that stores the state information of your infrastructure within the same directory as your Terraform configuration files. The state file keeps track of the mapping between the resources in your Terraform configuration and the real-world infrastructure they represent.
+
+## What is remote state file in Terraform?
+
+- A remote state file in Terraform,  refers to storing the state information of your infrastructure in a remote location rather than in the same directory as your Terraform configuration files. The state file contains information about the resources managed by Terraform, such as resource IDs, metadata, and other details needed to keep track of the infrastructure's state.
 
 
-     ![Terraform](images/assets.png)
+     ![Terraform](../images/assets.png)
 
 
 # Details and Links of the Sections 

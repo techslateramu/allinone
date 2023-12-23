@@ -2,7 +2,7 @@
 
 # Introduction 
 
-Thi is the home page containing links to all sub sections of Terraform .
+This is the home page containing links to all sub sections of Terraform .
 
 ## What is Terraform?
 

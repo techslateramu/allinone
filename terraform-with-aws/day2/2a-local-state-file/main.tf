@@ -70,7 +70,7 @@ resource "aws_elastic_beanstalk_application" "tftest" {
 resource "aws_elastic_beanstalk_environment" "tftest" {
   name                = local.environment_name
   application        = aws_elastic_beanstalk_application.tftest.name
-  solution_stack_name = "64bit Amazon Linux 2023 v4.0.6 running Python 3.11"
+  solution_stack_name = "64bit Amazon Linux 2023 v4.0.7 running Python 3.11"
 
   setting {
     namespace = "aws:autoscaling:launchconfiguration"

@@ -8,10 +8,13 @@ This Terraform script create AWS S3 Bucket. Amazon Simple Storage Service (Amazo
 
 ## Pre-Requisites
 
-- Create an AWS account
-- Create a IAM user and create access keys (link)
-- If you haven't installed Terraform, download and install it from the official Terraform website.
-- Install AWS CLI
+ [Create an AWS account](../../../aws/aws-account-creation/README.md)
+
+ [Create a IAM user and create access keys](../../../aws/aws-user-creation/README.md)
+ 
+ #### If you haven't installed Terraform, download and install it from the official Terraform website.
+
+ #### Install AWS CLI
 
 ## Getting Started
 

@@ -41,3 +41,4 @@ Thi is the home page containing links to all sub sections of Terraform .
 |DAY1| Create AWS S3 Bucket using outputs|[Terraform Script: Create AWS S3 Bucket using outputs](day1/1d_s3_using_outputs/README.md) |
 |DAY2| Create AWS S3 Bucket,lambda,beanstalk using localsatate|[Terraform Script: Create AWS S3 Bucket,lambda,beanstalk using localsatate](day2/2a-local-state-file/README.md) |
 |DAY2| Create AWS S3 Bucket,lambda,beanstalk using Remotesatate|[Terraform Script: Create AWS S3 Bucket,lambda,beanstalk using Remotesatate](day2/2b-remote-state/README.md) |
+|DAY3| Create AWS S3 Bucket,lambda,dynamodb using terraform env|[Terraform Script: Create AWS S3 Bucket,lambda,dynamodb using terraform env](day3/3a-env/README.md) |

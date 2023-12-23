@@ -2,7 +2,7 @@
 
 # Introduction 
 
-This page contains the links of all sub sections of day1 Terraform .
+This page contains the links of all the exercises of day1 Terraform in Azure .
 
 ## What is Terraform?
 
@@ -31,14 +31,14 @@ This page contains the links of all sub sections of day1 Terraform .
 - outputs in terraform are used to define output values that are exposed to users or other Terraform configurations when they consume your module. Outputs provide a way to share information about the infrastructure you've deployed, making it accessible to other parts of your Terraform code or to external systems.
 
 
- ![Terraform](images/assets.png)
+     ![Terraform](../images/assets.png)
 
 
 # Details and Links of the Sections 
 
 |S.No                | Topic         | Link |
 |----------------    |---------------|-------|
-|DAY1| 1a_rg_st|[Creating Azure Resource Group and Storage Account](1a_rg_st/README.md) |
-|DAY1| 1b_rg_st_using_vars|[Creating Azure Resource Group and Storage Account using Variables](1b_rg_st_using_vars/README.md) |
-|DAY1 | 1c_rg_st_using_locals|[Creating Azure Resource Group and Storage Account using locals](1c_rg_st_using_locals/README.md) |
-|DAY1| 1d_rg_st_using_outputs|[Creating Azure Resource Group and Storage Account using Outputs](1d_rg_st_using_outputs/README.md) |
+|DAY1| 1a_rg_st|[Creating Azure Resource Group and Storage Account](1a_rg_st) |
+|DAY1| 1b_rg_st_using_vars|[Creating Azure Resource Group and Storage Account using Variables](1b_rg_st_using_vars) |
+|DAY1 | 1c_rg_st_using_locals|[Creating Azure Resource Group and Storage Account using locals](1c_rg_st_using_locals) |
+|DAY1| 1d_rg_st_using_outputs|[Creating Azure Resource Group and Storage Account using Outputs](1d_rg_st_using_outputs) |

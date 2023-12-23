@@ -1,4 +1,4 @@
-![TechSlate](../../../global/images/ts.PNG)
+![TechSlate](../../../global/images/ts.png)
 
 # <span style="color: Seagreen;">Introduction 
 

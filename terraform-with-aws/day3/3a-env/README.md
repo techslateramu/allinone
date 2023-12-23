@@ -305,7 +305,7 @@ terraform {
 | Step    | command | Image |
 |---------|-------------|-------|
 | **Initialize**  | ``terraform init --var-file=./env/dev.tfvars`` |  ![Step ](../images/initd.png) |
-| **validate**   | ``terraform validate`` | ![Step ](../images/validd.png) |
+| **validate**   | ``terraform validate`` | ![Step ](../images/validd.PNG) |
 | **plan**  | ``terraform plan --var-file=./env/dev.tfvars`` |  ![Step ](../images/pland.png) |
 | **apply**  | ``terraform apply --var-file=./env/dev.tfvars`` |  ![Step ](../images/applyd.png) |
 

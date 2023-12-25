@@ -13,7 +13,7 @@ This is the home page containing links of env management and modules of day3 Ter
 - a Terraform module is a reusable and shareable unit of Terraform configuration. Modules enable you to encapsulate infrastructure resources, configurations, and logic into a separate and modular package, making it easier to manage and reuse code across different parts of your infrastructure.
 
 
-     ![Terraform](images/assets.png)
+     ![Terraform](../images/assets.png)
 
 
 

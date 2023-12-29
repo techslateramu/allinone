@@ -49,8 +49,8 @@ resource "aws_lambda_function" "hello" {
 data "archive_file" "lambda_hello" {
   type = "zip"
 
-  source_dir  = "../hello"
-  output_path = "../hello.zip"
+  source_dir  = "./hello"
+  output_path = "./hello.zip"
 }
 
 resource "aws_s3_object" "lambda_hello" {

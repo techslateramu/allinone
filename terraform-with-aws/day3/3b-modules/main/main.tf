@@ -15,3 +15,9 @@ module "example_dynamodb" {
   read_capacity = var.read_capacity
   write_capacity = var.write_capacity
 }
+
+module "lambda" {
+  source = "../module/lambda"
+
+  lambda_function_name = "tech-Lambda-Function"
+}

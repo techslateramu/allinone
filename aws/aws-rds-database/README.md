@@ -30,12 +30,14 @@
 | 2. | **Select creation method as ``Standard Create``. And Engine type as ``Mysql``** | ![Step 2](../images/mysql.png) |
 | 3. | **Scroll down to Templates and select ``Free Tier``.** | ![Step 3](../images/templates.png) |
 | 4. | **Moving to settings section , give proper database name , along with  ``Master Username``, and ``Master Password``**. | ![Step 4](../images/settings.png) |
-| 5. | **Keep the further things as default ,Pause at connectivity section and choose Public Access as ``Yes``.** | ![Step 5](../images/pa.png) |
+| 5. | **Keep the further things as default ,Pause at connectivity section and choose Public Access as ``Yes``.** | ![Step 5](../images/pa.png) | 
 | 6. | **Keeping rest of them as default , scroll down to the end of the page and click on ``Create Database``.** | ![Step 6](../images/create-data.png) |
 | 7. | **It will take some time to create database , Lets Wait.**| ![Step 7](../images/wait-data.png) |
 | 8. | **The Database got creared successfully.** | ![Step 8](../images/tech-data.png) |
 | 9. | **Open your database and copy the ``Endpoint``** | ![Step 9](../images/endpoint.png) |
-| 10. |**Now open the Dbeaver** | ![Step 10](../images/.png) |
+| 10.|**Now open the Dbeaver . Click on ``Connect`` and select the MySQL Database.** | ![Step 10](../images/dbeaver-mysql.png) |
+| 11.|**Now in the Server host box , give your ``endpoint`` .Give a ``Database`` name , and also youre ``Username`` and ``Password`` and  Click on ``Test Connection``.** | ![Step 10](../images/dbeaver-host.png) |
+| 12.|**It got connected Successfully.** | ![Step 10](../images/Connected-mysql.png) |
 
 ***
 <br>
@@ -51,10 +53,11 @@
 | 4. | **Moving to settings section , give proper database name , along with  ``Master Username``, and ``Master Password``**. | ![Step 4](../images/sett-post.png) |
 | 5. | **Keep the further things as default ,Pause at connectivity section and choose Public Access as ``Yes``.** | ![Step 5](../images/pa.png) |
 | 6. | **Keeping rest of them as default , scroll down to the end of the page and click on ``Create Database``.** | ![Step 6](../images/create-data.png) |
-| 7. | **It will take some time to create database , Lets Wait.**| ![Step 7](../images/wait-data.png) |
-| 8. | **The Database got creared successfully.** | ![Step 8](../images/tech-data.png) |
-| 9. | **Open your database and copy the ``Endpoint``** | ![Step 9](../images/endpoint.png) |
-| 10. |**Now open the Dbeaver** | ![Step 10](../images/.png) |
+| 7. | **It will take some time to create database , Lets Wait.**| ![Step 7](../images/wait-post.png) |
+| 8. | **The Database got creared successfully.Open your database and copy the ``Endpoint``** | ![Step 8](../images/db-postgres.png) |
+| 10.|**Now open the Dbeaver . Click on ``Connect`` and select the ``PostgreSQL Database``.** | ![Step 10](../images/dbeaver-postgres.png) |
+| 11.|**Now in the Server host box , give your ``endpoint`` .Give a ``Database`` name , and also youre ``Username`` and ``Password`` and  Click on ``Test Connection``.** | ![Step 10](../images/dbeaver-host-post.png) |
+| 12.|**It got connected Successfully.** | ![Step 10](../images/Connected-postgres.png) |
 
 ***
 <br>
@@ -83,6 +86,32 @@
 
 
 
+### <span style="color: green;">**2 . PostgreSQL Database**
+| Step | Description | Screenshot |
+|------|-------------|------------|
+| 1. | **Open the command line of your choice and run following command with provided **Access Key ID** and **Secret Access Key**** <br> ``aws configure`` | ![Step 1](../images/aws-conf.png) |
+| 2. | **Lets run the following command to create RDS - MySQL Datbase using AWS-Cli Command.** <br>``aws rds create-db-instance --db-instance-identifier my-test-rds-postgresql-instance --db-instance-class db.t3.micro --engine postgres  --master-username myusername  --master-user-password 'password123' --allocated-storage 5``| ![Step 2](../images/cre-data-ps.png) |
+| 3. | **Lets go to the ``AWS CONSOLE`` and check if database got created. It got created successfully , lets copy the ``endpoint``.** | ![Step 3](../images/endpoint-ps.png) |
+| 4. | **Now to connect to the RDS - MySQL Database , lets run the following command.make sure to replace the endpoint with yours.** <br>``psql -h my-test-rds-postgresql-instance.cv6ik6owcqfj.us-east-1.rds.amazonaws.com -P 5432 -u myusername -p`` | ![Step 3](../images/.png) |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -101,10 +130,15 @@
 | 1. | **Configure AWS credentials:** <br> ``Initialize-AWSDefaultConfiguration -AccessKey AKIAZAWPSDE***** -SecretKey "your-seceret-key"`` | ![Step 1](../images/ps-cred.png) |
 | 2. | **Lets run the following command to create RDS - MySQL Datbase using PowerShell Command.** <br>`` New-RDSDBInstance -DBInstanceIdentifier my-ps-rds-mysql-instance -DBInstanceClass db.t3.micro -Engine mysql -MasterUsername myusername -MasterUserPassword password123 -AllocatedStorage 5``| ![Step 2](../images/ps-create-db.png) |
 | 3. | **Lets go to the ``AWS CONSOLE`` and check if database got created. It got created successfully , lets copy the ``endpoint``. .**| ![Step 3](../images/ps-endpoint.png) |
-| 4. | **Now to connect to the RDS - MySQL Database , lets run the following command.make sure to replace the endpoint with yours.** <br>``mysql -h my-ps-rds-mysql-instance.cv6ik6owcqfj.us-east-1.rds.amazonaws.com -P 3306 -u lavanya -p`` | ![Step 3](../images/connect-db.png) |
-| 5. | **Lets just Apply the bucket policy:** <br> ``aws s3api put-bucket-policy --bucket s3bucket-ps-demo --policy file://policy.json``| ![Step 5](../images/ps-policy.png) |
-| 6. | **Lets , get back to AWS Console and see whether our bucket and file got uploaded .**| ![Step 6](../images/ps-console.png)|
-| 7. | **Open the file and access the ```Object URL```**| ![Step 8](../images/ps-ACCESS.png) |
-| 8. | **You can see Html Student Application Running .**| ![step 9](../images/URL-PS.png) |
+
+
 
  
+
+
+ ### <span style="color: green;">**1 . PostgreSQL Database**
+| Step | Description | Screenshot |
+|------|-------------|------------|
+| 1. | **Configure AWS credentials:** <br> ``Initialize-AWSDefaultConfiguration -AccessKey AKIAZAWPSDE***** -SecretKey "your-seceret-key"`` | ![Step 1](../images/ps-cred.png) |
+| 2. | **Lets run the following command to create RDS - MySQL Datbase using PowerShell Command.** <br>`` New-RDSDBInstance -DBInstanceIdentifier my-ps-rds-postgresql-instance -DBInstanceClass db.t3.micro -Engine postgres -MasterUsername myusername -MasterUserPassword password123 -AllocatedStorage 5``| ![Step 2](../images/ps-create-post.png) |
+| 3. | **Lets go to the ``AWS CONSOLE`` and check if database got created. It got created successfully , lets copy the ``endpoint``. .**| ![Step 3](../images/ps-post-end.png) |

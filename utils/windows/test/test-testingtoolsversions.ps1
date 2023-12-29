@@ -1,4 +1,4 @@
-$softwareList = @("Git", "Terraform", "Code", "AZ", "AWS" , "Mvn", "Helm", "Kubectl")
+$softwareList = @("openjdk","vscode","postman","git","azure-cli","awscli","kubectl","dbeaver","maven")
 
 foreach ($software in $softwareList) {
     $installed = Get-Command -Name $software -ErrorAction SilentlyContinue
@@ -14,5 +14,3 @@ Write-Host " ****************************************************************** 
 Write-Host " For below tools, please do verify manually "
 Write-Host " ****************************************************************** "
 Write-Host "Azure Data Studio, DBeaver, Studio 3T, Postman"
-
-

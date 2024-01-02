@@ -1,3 +1,5 @@
+![TechSlate](../../global/images/ts.png)
+
 # Interview-Task-K8s-
 
 # Table of contents

@@ -1,3 +1,5 @@
+![TechSlate](../../global/images/ts.png)
+
 # Interview-Task-git-
 
 # Table of contents

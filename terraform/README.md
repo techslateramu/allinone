@@ -36,13 +36,13 @@ Thi is the home page containing links to all sub sections of Terraform .
 
 |S.No                | Topic         | Link |
 |----------------    |---------------|-------|
-|DAY1| Create Azure Resource Group and Storage Account|[Terraform Script: Create Azure Resource Group and Storage Account](day1/1a_rg_st/README.md) |
-|DAY1| Create Azure Resource Group and Storage Account using Variables| [Terraform Script: Create Azure Resource Group and Storage Account using Variables](day1/1b_rg_st_using_vars/README.md) |
-|DAY1 | Create Azure Resource Group and Storage Account using locals | [Terraform Script: Create Azure Resource Group and Storage Account using locals](day1/1c_rg_st_using_locals/README.md) |
-|DAY1| Create Azure Resource Group and Storage Account using Outputs | [Terraform Script: Create Azure Resource Group and Storage Account using Outputs](day1/1d_rg_st_using_outputs/README.md) |
-|DAY2| Exploring local state file by creating Resource group , storage account and servicebus.  | [Terraform Script: Exploring local state file by creating Resource group , storage account and servicebus.](day2/2a-local-state-file/README.md) |
-|DAY2|  Creating remote state file using backend.tf by creating Resource group , storage account and servicebus.  | [Terraform Script: Creating remote state file using backend.tf by creating Resource group , storage account and servicebus.](day2/2b-remote-state/README.md) |
-|DAY3| Terraform with env management  | [Terraform with env management](day3/3a-env/README.md) |
-|DAY3| Terraform using modules | [Terraform with env management](day3/3b-modules/README.md) |
-|DAY4| Sample projects| [Links of 4 Sample Projects](day4/README.md) |
+|DAY1| Create Azure Resource Group and Storage Account|[Terraform Script: Create Azure Resource Group and Storage Account](day1/1a_rg_st) |
+|DAY1| Create Azure Resource Group and Storage Account using Variables| [Terraform Script: Create Azure Resource Group and Storage Account using Variables](day1/1b_rg_st_using_vars) |
+|DAY1 | Create Azure Resource Group and Storage Account using locals | [Terraform Script: Create Azure Resource Group and Storage Account using locals](day1/1c_rg_st_using_locals) |
+|DAY1| Create Azure Resource Group and Storage Account using Outputs | [Terraform Script: Create Azure Resource Group and Storage Account using Outputs](day1/1d_rg_st_using_outputs) |
+|DAY2| Exploring local state file by creating Resource group , storage account and servicebus.  | [Terraform Script: Exploring local state file by creating Resource group , storage account and servicebus.](day2/2a-local-state-file) |
+|DAY2|  Creating remote state file using backend.tf by creating Resource group , storage account and servicebus.  | [Terraform Script: Creating remote state file using backend.tf by creating Resource group , storage account and servicebus.](day2/2b-remote-state) |
+|DAY3| Terraform with env management  | [Terraform with env management](day3/3a-env) |
+|DAY3| Terraform using modules | [Terraform with env management](day3/3b-modules) |
+|DAY4| Sample projects| [Links of 4 Sample Projects](day4) |
 

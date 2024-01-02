@@ -1,14 +1,22 @@
+![TechSlate](../../global/images/ts.png)
+
 # Interview-Task-K8s-
 
 # Table of contents
 
-1.[Introduction](#**<Introduction>**)
+1.[overview](#**<overview>)
 
-2.[Test Instructions](#**<Test-Instructions>**)
+2.[Introduction](#**<Introduction>**)
 
-3.[Task1](#**<Task1>**)
+3.[Test Instructions](#**<Test-Instructions>**)
 
-4.[deployment.yaml](#**<deployment.yaml>**)
+4.[Task1](#**<Task1>**)
+
+5.[deployment.yaml](#**<deployment.yaml>**)
+
+## **Overview**
+
+This represents a common initial stage in the interview process, involving an online test with various tasks to complete. The test requires candidates to execute predefined test cases. Once the assigned tasks are finished, candidates must run the provided test cases. If all test cases pass successfully, they can proceed to submit their results. In the event that any test case fails, candidates have the opportunity to make necessary adjustments before resubmitting. Attached are the test instructions, and screenshots for Task 1 have been included for clarity.
 
 ## **Introduction**
 
@@ -16,14 +24,14 @@ In a typical job interview process, the technical test is a crucial stage that e
 
 ## Test Instructions : 
 
-Thanks for your interest in joining the Home Office team and for taking the time to complete this online technical evaluation that is designed to enable the Home Office recruitment team to better understand where your strengths are.
+Thanks for your interest in joining the team and for taking the time to complete this online technical evaluation that is designed to enable the recruitment team to better understand where your strengths are.
 This online evaluation includes one of the following modules:
 * Multiple or Single Choice Questions
 * One or more coding challenges
 * Diagram challenge
 * Project challenge
 
-Good luck, have fun, and thanks again for your interest in joining the Home Office team!
+Good luck, have fun, and thanks again for your interest in joining the team!
 
 ### Notes:
 
@@ -36,6 +44,8 @@ Good luck, have fun, and thanks again for your interest in joining the Home Offi
 ### DESCRIPTION: 
 
 To begin, kindly provide your login credentials, including your email address. Once this information is submitted, you will be prepared to initiate the test. In certain instances, practice tests may be available to help you familiarize yourself with the format of the actual test. When you are ready to commence the official examination, the timer will be activated, and you must complete the test within the allocated time frame before submitting your responses.
+
+![Visual studio page](../git-task/images/Testhome1.png)
 
 ## TASK 1:
 
@@ -52,7 +62,9 @@ You need to deploy an application on Kubernetes. Create and complete the deploym
 
 * Finally create a service named application-service with type LoadBalancer, that is forwarding port 80 to the pod tagged with label app-MyApp on port 8081
 
-### **3. Create deployment.yaml .**
+![Visual studio page](../git-task/images/k8s-task1.png)
+
+### **Create deployment.yaml**
 
 ```
 apiVersion: v1
@@ -99,3 +111,5 @@ You can save this configuration in a file named deployment.yaml and then apply i
 ## COMMAND: 
 
  **```kubectl apply -f deployment.yaml```**
+
+ ![Visual studio page](../git-task/images/k8s-task2.png)

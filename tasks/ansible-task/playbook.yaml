@@ -1,0 +1,26 @@
+---
+- name: Configure Users and Groups
+  hosts: your_target_server
+  become: true
+
+  tasks:
+    - name: Create a new user second-user
+      user:
+        name: second-user
+        state: present
+
+    - name: Change the shell for the newly created user to /bin/sh
+      user:
+        name: second-user
+        shell: /bin/sh
+
+    - name: Create a new group second-group
+      group:
+        name: second-group
+        state: present
+
+    - name: Add user second-user to the group second-group
+      user:
+        name: second-user
+        groups: second-group
+        append: yes

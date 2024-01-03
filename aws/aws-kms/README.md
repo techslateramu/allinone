@@ -65,7 +65,34 @@
 | Step | Description | Screenshot |
 |------|-------------|------------|
 | 1. | **Configure AWS credentials:** <br> ``Initialize-AWSDefaultConfiguration -AccessKey AKIAZAWPSDE***** -SecretKey "your-seceret-key"`` | ![Step 1](../images/ps-cred.png) |
-| 2. | **Run the following command to Create ``Key`` using Powershell command**. "The command is placed at the end o the page".| ![Step 1](../images/kms-ps-1.png) |
-| 3. | **Run the following command to add ``Alias`` name to the ``Key``**. <br>  </br>```aws kms create-alias --alias-name "alias/techkeyps" --target-key-id 17ce0048-fff0-46ac-83ab-85395930b0e8``` | ![Step 1](../images/kms-ps-2.png) |
+| 2. | **Run the following command to Create ``Key`` using Powershell command**. "The command is placed at the end of the page".| ![Step 1](../images/kms-ps-1.png) |
+| 3. | **Run the following command to add ``Alias`` name to the ``Key``**.**You can take the Key-Id from above output**. <br>  </br>```aws kms create-alias --alias-name "alias/techkeyps" --target-key-id 17ce0048-fff0-46ac-83ab-**************``` | ![Step 1](../images/kms-ps-2.png) |
 | 4. | **Now lets head back to AWS Console and check if out key got created with Alias name ``techkeyps``.** | ![Step 1](../images/kms-ps-3.png) |
+| 5. | **You can also open the Key to know more details.** | ![Step 1](../images/kms-ps-4.png) |
+
+
+***
+<br>
+   </br>   
+
+- Here is the command for second step in ``PowerShell``
+
+           New-KMSKey -Description "My new KMS key" -Policy "{
+          \"Version\": \"2012-10-17\",
+          \"Id\": \"key-consolepolicy-1\",
+          \"Statement\": [
+          {
+            \"Sid\": \"Enable IAM User Permissions\",
+            \"Effect\": \"Allow\",
+            \"Principal\": {
+                \"AWS\": \"*\"
+            },
+            \"Action\": [
+                \"kms:*\"
+            ],
+            \"Resource\": \"*\"
+         }
+         ]
+         }"
+
 

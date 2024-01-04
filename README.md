@@ -218,3 +218,4 @@ S.No| Topic | Link |
 |DAY2| Create AWS S3 Bucket,lambda,beanstalk using localsatate | [Terraform Script: Create AWS S3 Bucket,lambda,beanstalk using localsatate](/terraform-with-aws/day2/2a-local-state-file/README.md) |
 |DAY2| Create AWS S3 Bucket,lambda,beanstalk using Remotesatate | [Terraform Script: Create AWS S3 Bucket,lambda,beanstalk using Remotesatate](terraform-with-aws/day2/2b-remote-state/README.md) |
 |DAY3| Create AWS S3 Bucket,lambda,dynamodb using terraform env|[Terraform Script: Create AWS S3 Bucket,lambda,dynamodb using terraform env](terraform-with-aws/day3/3a-env/README.md) |
+|DAY3| Create AWS S3 Bucket,lambda,dynamodb using terraform modules|[Terraform Script: Create AWS S3 Bucket,lambda,dynamodb using terraform modules](terraform-with-aws/day3/3b-modules/README.md) |

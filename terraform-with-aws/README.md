@@ -35,10 +35,11 @@ This is the home page containing links to all sub sections of Terraform .
 
 |S.No                | Topic         | Link |
 |----------------    |---------------|-------|
-|DAY1| Create AWS S3 Bucket|[Terraform Script: Create AWS S3 Bucket](day1/1a_s3/README.md) |
-|DAY1| Create AWS S3 Bucket using vars|[Terraform Script: Create AWS S3 Bucket using vars](day1/1b_s3_using_vars/README.md) |
-|DAY1| Create AWS S3 Bucket using locals|[Terraform Script: Create AWS S3 Bucket using locals](day1/1c_s3_using_locals/README.md) |
-|DAY1| Create AWS S3 Bucket using outputs|[Terraform Script: Create AWS S3 Bucket using outputs](day1/1d_s3_using_outputs/README.md) |
-|DAY2| Create AWS S3 Bucket,lambda,beanstalk using localsatate|[Terraform Script: Create AWS S3 Bucket,lambda,beanstalk using localsatate](day2/2a-local-state-file/README.md) |
-|DAY2| Create AWS S3 Bucket,lambda,beanstalk using Remotesatate|[Terraform Script: Create AWS S3 Bucket,lambda,beanstalk using Remotesatate](day2/2b-remote-state/README.md) |
-|DAY3| Create AWS S3 Bucket,lambda,dynamodb using terraform env|[Terraform Script: Create AWS S3 Bucket,lambda,dynamodb using terraform env](day3/3a-env/README.md) |
+|DAY1| Create AWS S3 Bucket|[Terraform Script: Create AWS S3 Bucket](day1/1a_s3) |
+|DAY1| Create AWS S3 Bucket using vars|[Terraform Script: Create AWS S3 Bucket using vars](day1/1b_s3_using_vars) |
+|DAY1| Create AWS S3 Bucket using locals|[Terraform Script: Create AWS S3 Bucket using locals](day1/1c_s3_using_locals) |
+|DAY1| Create AWS S3 Bucket using outputs|[Terraform Script: Create AWS S3 Bucket using outputs](day1/1d_s3_using_outputs) |
+|DAY2| Create AWS S3 Bucket,lambda,beanstalk using localsatate|[Terraform Script: Create AWS S3 Bucket,lambda,beanstalk using localsatate](day2/2a-local-state-file) |
+|DAY2| Create AWS S3 Bucket,lambda,beanstalk using Remotesatate|[Terraform Script: Create AWS S3 Bucket,lambda,beanstalk using Remotesatate](day2/2b-remote-state) |
+|DAY3| Create AWS S3 Bucket,lambda,dynamodb using terraform env|[Terraform Script: Create AWS S3 Bucket,lambda,dynamodb using terraform env](day3/3a-env) |
+|DAY3| Create AWS S3 Bucket,lambda,dynamodb using terraform modules|[Terraform Script: Create AWS S3 Bucket,lambda,dynamodb using terraform modules](day3/3b-modules) |

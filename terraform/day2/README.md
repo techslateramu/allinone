@@ -32,5 +32,5 @@ This is the home page containing local state file and remote state file links of
 
 |S.No                | Topic         | Link |
 |----------------    |---------------|-------|
-|DAY1| 2a-local-state-file|[Creating Azure Resource Group, Storage Account and Service Bus](2a-local-state-file) |
-|DAY1| 2b-remote-state|[Creating Azure Resource Group, Storage Account and Service Bus](2b-remote-state) |
+|DAY2| 2a-local-state-file|[Creating Azure Resource Group, Storage Account and Service Bus](2a-local-state-file) |
+|DAY2| 2b-remote-state|[Creating Azure Resource Group, Storage Account and Service Bus](2b-remote-state) |

@@ -2,7 +2,7 @@
 
 # Docker 
 
-![Docker](../images/Docker.png)
+![Docker](../../windows/images/Docker.png)
 
 Docker is an open-source platform that allows developers to automate the deployment, scaling, and management of applications using containerization. Containers are lightweight and isolated environments that package an application and all its dependencies, including libraries and configuration files, into a single unit. Docker provides a standardized way to create, distribute, and run containers on any operating system.
 
@@ -29,25 +29,25 @@ These are just some of the fundamental concepts of Docker. Docker has become inc
 | Step | Description | Image |
 |------|-------------|-------|
 | **Prequisites** | | | |
-| **Step 1** | **Install WSL or make sure you have WSL Installed your machine.Lets first check if we have WSL installed in our system , by typing the below command in Powershell(RunasAdministrator)** **```wsl --list --verbose```**|![Step 1](../images/powershell.png) |
-| **Step 1.a**| **If WSL is not installed in our system , lets install by following the below steps, Click the below link , which will direct you to Microsfot Document**     https://learn.microsoft.com/en-us/windows/wsl/install-manual |![Step 1.a](../images/Microsoftdoc.png) |
-| **Step 1.b** | **Please follow all the 6 steps which are been mentioned in the document. And in the 4th step don’t forget to download the WSL2 Linux kernel update package, which is very much necessary for us to run the Docker Desktop You can see WSL Package Downloading.**|![Step 1.b](../images/downloading.png) |
-| **Step 2** | **Now, once the package is downloaded, we need to add the WSL path to our System Environment Variables.**| |![Step 4](../images/dockerrun.png) |
-| **Step 2.a**| **Go to the Search box and search for WSL.Click on the File Location**|![Step 2.a](../images/wsl.png) |
-| **Step 2.b** | **Now, copy the path of WSL**|![Step 2.b](../images/path.png) |
-| **Step 2.C** | **Now, search for Edit the System Environment variables in search box and open that.**|![Step 2.c](../images/sysenv.png) |
-| **Step 2.d** | **Click on Environment variables**|![Step 2.d](../images/env-var.png) |
-| **Step 2.e** | **Under System variables select Path and click on Edit.**|![Step 2.e](../images/edit.png) |
+| **Step 1** | **Install WSL or make sure you have WSL Installed your machine.Lets first check if we have WSL installed in our system , by typing the below command in Powershell(RunasAdministrator)** **```wsl --list --verbose```**|![Step 1](../../windows/images/powershell.png) |
+| **Step 1.a**| **If WSL is not installed in our system , lets install by following the below steps, Click the below link , which will direct you to Microsfot Document**     https://learn.microsoft.com/en-us/windows/wsl/install-manual |![Step 1.a](../../windows/images/Microsoftdoc.png) |
+| **Step 1.b** | **Please follow all the 6 steps which are been mentioned in the document. And in the 4th step don’t forget to download the WSL2 Linux kernel update package, which is very much necessary for us to run the Docker Desktop You can see WSL Package Downloading.**|![Step 1.b](../../windows/images/downloading.png) |
+| **Step 2** | **Now, once the package is downloaded, we need to add the WSL path to our System Environment Variables.**| |![Step 4](../../windows/images/dockerrun.png) |
+| **Step 2.a**| **Go to the Search box and search for WSL.Click on the File Location**|![Step 2.a](../../windows/images/wsl.png) |
+| **Step 2.b** | **Now, copy the path of WSL**|![Step 2.b](../../windows/images/path.png) |
+| **Step 2.C** | **Now, search for Edit the System Environment variables in search box and open that.**|![Step 2.c](../../windows/images/sysenv.png) |
+| **Step 2.d** | **Click on Environment variables**|![Step 2.d](../../windows/images/env-var.png) |
+| **Step 2.e** | **Under System variables select Path and click on Edit.**|![Step 2.e](../../windows/images/edit.png) |
 |     **Download Docker Desktop:**  | | | |
-| **Step 3** | **Go to your favourite Browser, and type "Docker Desktop Download” select the first link.**|![Step 3](../images/Dockerdesktop.png) |
-| **Step 3.a** | **Click on the Download Docker Desktop button, you will see Docker desktop downloading.**|![Step 3.a](../images/DockerOS.png) |
-| **Step 3.b** | **Once Docker desktop is downloaded, click on open file then you will see packages installing..**|![Step 3.b](../images/packages.png) |
+| **Step 3** | **Go to your favourite Browser, and type "Docker Desktop Download” select the first link.**|![Step 3](../../windows/images/Dockerdesktop.png) |
+| **Step 3.a** | **Click on the Download Docker Desktop button, you will see Docker desktop downloading.**|![Step 3.a](../../windows/images/DockerOS.png) |
+| **Step 3.b** | **Once Docker desktop is downloaded, click on open file then you will see packages installing..**|![Step 3.b](../../windows/images/packages.png) |
 | **Step 3.c** | **Once the installation is done, come back to your main Desktop, you will see Docker desktop on the screen, open the Docker desktop.**|
-| **Step 3.d** | **You will see Docker Desktop Running Successfully.**|![Step 3.c](../images/desktop.png) |
+| **Step 3.d** | **You will see Docker Desktop Running Successfully.**|![Step 3.c](../../windows/images/desktop.png) |
 |     **How to Verify**  | | | |
-| **Step 4** | **Open PowerShell Terminal and run the following command**  ```docker run -d -p 80:80 docker/getting-started```|![Step 4](../images/run.png) |
-| **Step 4.a** | **Open browser and enter url "localhost:80".**|![Step 4.a](../images/local.png) |
-| **Step 4.a** | **You should see Getting Started Page Appearing.**|![Step 4.b](../images/gettingstarted.png) |
+| **Step 4** | **Open PowerShell Terminal and run the following command**  ```docker run -d -p 80:80 docker/getting-started```|![Step 4](../../windows/images/run.png) |
+| **Step 4.a** | **Open browser and enter url "localhost:80".**|![Step 4.a](../../windows/images/local.png) |
+| **Step 4.a** | **You should see Getting Started Page Appearing.**|![Step 4.b](../../windows/images/gettingstarted.png) |
 
 
 ***

@@ -1,4 +1,4 @@
-![TechSlate](../../global/images/ts.png)
+![TechSlate](../../../global/images/ts.png)
 
 # Introduction
 

@@ -20,14 +20,17 @@ ARM_TENANT_ID - The AAD tenant ID for the Azure subscription.
 
 ### Setup Environment Variables in Windows
 
+- Run this commands in bash shell
+
 ```
-New-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\Environment" -Name "ARM_TENANT_ID" -Value "VALUE_OF_TENANT_ID" -PropertyType String -Force
-New-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\Environment" -Name "ARM_SUBSCRIPTION_ID" -Value "VALUE_OF_SUBSCRIPTION_ID" -PropertyType String -Force
-New-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\Environment" -Name "ARM_CLIENT_ID" -Value "VALUE_OF_CLIENT_ID" -PropertyType String -Force
-New-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\Environment" -Name "ARM_CLIENT_SECRET" -Value "VALUE_OF_CLIENT_SECRET" -PropertyType String -Force
+export ARM_TENANT_ID="VALUE_OF_TENANT_ID"
+export ARM_SUBSCRIPTION_ID="VALUE_OF_SUBSCRIPTION_ID"
+export ARM_CLIENT_ID="VALUE_OF_CLIENT_ID"
+export ARM_CLIENT_SECRET="VALUE_OF_CLIENT_SECRET"
 ```
 
 ### Setup Environment Variables in Mac
+
 ```
 export ARM_TENANT_ID="VALUE_OF_TENANT_ID"
 export ARM_SUBSCRIPTION_ID="VALUE_OF_SUBSCRIPTION_ID"

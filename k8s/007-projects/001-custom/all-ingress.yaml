@@ -9,7 +9,7 @@ metadata:
 spec:
   rules:
   # - host: aks-helloworld.<CLUSTER_SPECIFIC_DNS_ZONE>
-  - host: apps.d8db806e5a8b43dca905.southafricanorth.aksapp.io
+  - host: apps.8e1005bc066142c3b353.southafricanorth.aksapp.io
     http:
       paths:
       - path: /calc

@@ -286,7 +286,7 @@ Terraform is a popular infrastructure as code tool that allows you to define, ma
 - **Follow security best practices:** Follow security best practices when configuring your infrastructure resources. For example, use strong passwords and encryption, restrict access to sensitive resources, and enable logging and monitoring
 
 
-## **Q16.How can you test Terraform code and ensure its reliability?** ##
+## **Q15.How can you test Terraform code and ensure its reliability?** ##
 
 ### Ans:
 
@@ -308,7 +308,7 @@ Testing Terraform code is essential to ensure its reliability and to prevent pot
 
 
 
-## **Q17.What are some tools that can be used to complement Terraform?** ##
+## **Q16.What are some tools that can be used to complement Terraform?** ##
 
 ### Ans:
 
@@ -326,7 +326,7 @@ There are several tools that can be used to complement Terraform and help you ma
 
 - **Vagrant**: It is an automation software program that allows you to construct and manage virtual machines from a single location. The Vagrant approach improves production parity, reduces development environment setup time, and eliminates the “works on my computer” excuse.
 
-## **Q18.How can you use Terraform with a version control system (e.g., Git)?** ##
+## **Q17.How can you use Terraform with a version control system (e.g., Git)?** ##
 
 ### Ans:
 
@@ -352,7 +352,7 @@ By following these steps, you can use Git to manage your Terraform code and coll
 
 
 
-## **Q19.How can you use Terraform to deploy and manage container-based applications?** ##
+## **Q18.How can you use Terraform to deploy and manage container-based applications?** ##
 
 ### Ans:
 
@@ -374,7 +374,7 @@ Overall, Terraform simplifies the process of deploying and managing container-ba
 
 
 
-## **Q20.What are some common challenges you may encounter when working with Terraform and how can you address them?** ##
+## **Q19.What are some common challenges you may encounter when working with Terraform and how can you address them?** ##
 
 ### Ans:
 
@@ -393,7 +393,7 @@ The common challenges users may face when working with Terraform, and how to add
 6. **Terraform modules**: Terraform modules can be reused across different projects, but they can also introduce additional complexity and versioning issues. To address this, it is important to carefully review and test any third-party modules you use, and keep track of module versioning to ensure compatibility.
 
 
-## **Q21.Whats are your day to day activities in Terraform ?** ##
+## **Q20.Whats are your day to day activities in Terraform ?** ##
 
 ### Ans:
 

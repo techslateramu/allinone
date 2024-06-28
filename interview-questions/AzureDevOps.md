@@ -250,7 +250,7 @@ Azure DevOps pipelines provide the feature of Deployment Groups that allows you 
 
 Here's how you can create and use deployment groups in Azure DevOps pipelines:
 
-# Creating a Deployment Group
+## Creating a Deployment Group
 
 1. Go to the Azure DevOps portal and navigate to your project.
 
@@ -268,7 +268,7 @@ Here's how you can create and use deployment groups in Azure DevOps pipelines:
 
 8. Review and confirm the settings, then click the "Create" button to create the deployment group.
 
-# Using a Deployment Group in a Pipeline
+## Using a Deployment Group in a Pipeline
 
 1. Open your pipeline in the Azure DevOps portal.
 

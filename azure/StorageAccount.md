@@ -54,7 +54,7 @@ New-AzStorageAccount -Name <account_name> -ResourceGroupName <resource_group_nam
 New-AzResourceGroup -Name storage-az-powershell -Location eastus
 ```
 ```
- New-AzStorageAccount -Name techslate12345 -ResourceGroupName storage-az-powershell  -Location eastus -SkuName Standard_LRS -Kind StorageV2 -EncryptionServices blob -EnableHttpsTrafficOnly $true
+ New-AzStorageAccount -Name techslate12345 -ResourceGroupName storage-az-powershell  -Location eastus -SkuName Standard_LRS -Kind StorageV2 -EnableHttpsTrafficOnly $true
 ```
 
 <br>

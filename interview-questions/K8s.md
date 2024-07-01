@@ -10,7 +10,7 @@
 ## **Q1. What is Kubernetes and why is it important in today's technology landscape?** ##
 
 ### Ans:
-![DevOps](images/kuberneteslogo.png)
+![DevOps](images/kubernetes.png)
 
 - Kubernetes is an open-source container orchestration platform that automates the deployment, scaling, and management of containerized applications. It was originally developed by Google and is now maintained by the Cloud Native Computing Foundation (CNCF).
 

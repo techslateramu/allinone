@@ -305,7 +305,7 @@ When you open a terminal window, you'll see a prompt, which is usually a dollar 
 Using the Linux shell can be a powerful way to interact with your operating system and automate tasks. Many system administrators and developers rely heavily on the shell to manage their systems and write scripts.
 
 
-## **Q11. Can you describe the process of writing and executing a shell script in Linux?** ##
+## **Q12. Can you describe the process of writing and executing a shell script in Linux?** ##
 
 ### Ans:
 
@@ -334,7 +334,7 @@ This line tells the system that the script should be run in the Bash shell.
 That's it! Your script should now execute and you should see its output in the terminal.
 
 
-## **Q12. Can you explain the concept of a Linux environment variable and how it is used?** ##
+## **Q13. Can you explain the concept of a Linux environment variable and how it is used?** ##
 
 ### Ans:
 
@@ -349,7 +349,7 @@ That's it! Your script should now execute and you should see its output in the t
 - Environment variables can be very useful for scripting and automation, as they allow you to pass information between different programs and scripts. For example, you can use environment variables to set the output directory for a script or to specify the name of a file to be processed.
 
 
-## **Q13. Can you describe the process of redirecting input and output in Linux?** ##
+## **Q14. Can you describe the process of redirecting input and output in Linux?** ##
 
 ### Ans:
 
@@ -370,7 +370,7 @@ Here are some common ways to redirect input and output in Linux:
 These are some of the basic ways to redirect input and output in Linux, but there are many other advanced techniques available. With input and output redirection, Linux users can create powerful scripts and automate complex workflows.
 
 
-## **Q14. Can you explain the concept of a Linux pipe and how it is used?** ##
+## **Q15. Can you explain the concept of a Linux pipe and how it is used?** ##
 
 ### Ans:
 

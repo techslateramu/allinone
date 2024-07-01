@@ -110,7 +110,7 @@ Overall, automation is an essential component of a successful DevOps approach, a
 
 ### Ans:
 
-![DevOps](images/IGITnfrastructureCode.png)
+![DevOps](images/InfrastructureCode.png)
 
 - Infrastructure as code (IAC) is the practice of managing and provisioning computing infrastructure through machine-readable definition files, rather than through manual configuration or physical hardware. The idea is to treat infrastructure as if it were code, using the same development, testing, and deployment practices that software engineers use for application code.
 
@@ -266,7 +266,7 @@ The process of a rolling deployment typically involves the following steps:
 Rolling deployments are often used in production environments to update software without causing downtime or disruptions. This strategy is especially useful for systems that require continuous uptime and cannot afford to have long periods of downtime. By updating components gradually, rolling deployments can help ensure that the overall system remains stable and available to users throughout the deployment process.
 
 
-## **Q13.Can you describe the process of rolling back a release in a DevOps environment?** ##
+## **Q14.Can you describe the process of rolling back a release in a DevOps environment?** ##
 
 ### Ans:
 
@@ -291,7 +291,7 @@ Here are the general steps involved in rolling back a release in a DevOps enviro
 These are the general steps involved in rolling back a release in a DevOps environment. The specifics may vary depending on the tools and processes used by each team.
 
 
-## **Q14.Can you explain the concept of blue-green deployment?** ##
+## **Q15.Can you explain the concept of blue-green deployment?** ##
 
 ### Ans:
 

@@ -45,7 +45,7 @@ New-AzResourceGroup -Name <resource_group_name> -Location <location>
 ```
 
 ```
-New-AzStorageAccount -Name <account_name> -ResourceGroupName <resource_group_name> -Location <location> -SkuName <sku_name> -Kind <kind> -EncryptionServices <services> -EnableHttpsTrafficOnly $true
+New-AzStorageAccount -Name <account_name> -ResourceGroupName <resource_group_name> -Location <location> -SkuName <sku_name> -Kind <kind> -EnableHttpsTrafficOnly $true
 ```
 
  ### PowerShell Command
